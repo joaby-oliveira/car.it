@@ -1,0 +1,13 @@
+import Head from 'next/head'
+
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Car.it</title>
+        <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    </div>
+  )
+}
