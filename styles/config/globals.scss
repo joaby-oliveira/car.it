@@ -43,6 +43,15 @@ h1 {
     background: #fff;
     color: $color-primary-3;
     box-shadow: none;
+    &:hover {
+      background: $color-secondary-1;
+    }
+    &:active {
+      background: $color-enphasis-2;
+    }
+    &:focus {
+      background: $color-secondary-2;
+    }
   }
   &:hover {
     background: $color-enphasis-4;
