@@ -38,10 +38,17 @@ h1 {
   border-radius: 0.625rem;
   box-shadow: 0px 10px 30px 0px hsla(234, 84%, 25%, 0.15);
   display: inline-block;
+  transition: 0.2s;
   &.buttonSecondary {
     background: #fff;
     color: $color-primary-3;
     box-shadow: none;
+  }
+  &:hover {
+    background: $color-enphasis-4;
+  }
+  &:active {
+    background: $color-enphasis-2;
   }
   svg {
     margin-left: .625rem;
