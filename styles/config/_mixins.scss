@@ -1,5 +1,6 @@
 @import 'variables';
 @mixin title-1 {
   font-size: $title-1-size;
-  color: $color-primary-1;
+  font-weight: 600;
+  color: $color-primary-3;
 }

@@ -1,6 +1,24 @@
 @import '../../../styles/config/variables';
-
+@import '../../../styles/config/mixins';
 .navbar {
   width: 100%;
   padding: 2.5rem 5rem;
+}
+
+.tag {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: $color-enphasis-1;
+  border: 1px solid $color-enphasis-1;
+  border-radius: .625rem;
+  padding: .625rem 2.5rem;
+}
+
+.hero {
+  h1 {
+    @include title-1;
+    span {
+      color: $color-enphasis-3;
+    }
+  }
 }

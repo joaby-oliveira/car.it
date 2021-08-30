@@ -1,5 +1,4 @@
 import styles from '../Landing.module.scss'
-import Link from 'next/link'
 import Button from '../../../components/Button'
 
 const Navbar = () => {
