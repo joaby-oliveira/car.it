@@ -50,6 +50,9 @@ h1 {
   &:active {
     background: $color-enphasis-2;
   }
+  &:focus {
+    background: $color-enphasis-1;
+  }
   svg {
     margin-left: .625rem;
   }
