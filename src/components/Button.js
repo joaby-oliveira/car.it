@@ -3,7 +3,7 @@ import Link from "next/link"
 const Button = ({ href, children, secondary }) => {
   return (
     <Link href={href}>
-      <a className={`button ${secondary ? 'buttonSecondary' : ''}`}>{children}</a>
+      <a className={`button flex crossCenter ${secondary ? 'buttonSecondary' : ''}`}>{children}</a>
     </Link>
   )
 }
