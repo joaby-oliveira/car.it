@@ -2,7 +2,7 @@
 @import '../../../styles/config/mixins';
 .navbar {
   width: 100%;
-  padding: 2.5rem 5rem;
+  padding: 2.5rem 0;
 }
 
 .tag {
@@ -12,13 +12,10 @@
   border: 1px solid $color-enphasis-1;
   border-radius: .625rem;
   padding: .625rem 2.5rem;
+  margin-bottom: 2.5rem;
+  display: inline-block;
 }
 
 .hero {
-  h1 {
-    @include title-1;
-    span {
-      color: $color-enphasis-3;
-    }
-  }
+  
 }

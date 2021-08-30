@@ -3,7 +3,7 @@ import Landing from './Landing/Landing'
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>Car.it</title>
         <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />

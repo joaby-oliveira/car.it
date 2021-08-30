@@ -1,14 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-@import 'variables';
-@import 'mixins';
-@import 'reset';
+@import "variables";
+@import "mixins";
+@import "reset";
+
+.container {
+  max-width: 1280px;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
 
 h1 {
   max-width: 45rem;
+  @include title-1;
+  span {
+    color: $color-enphasis-3;
+  }
 }
 
-h1, h2, h3, h4, .button, span {
+h1,
+h2,
+h3,
+h4,
+.button,
+span {
   font-family: $title-font;
 }
 
@@ -19,7 +34,7 @@ h1, h2, h3, h4, .button, span {
   background: $color-enphasis-3;
   padding: 1.25rem 2.5rem;
   color: $color-secondary-3;
-  border-radius: .625rem;
+  border-radius: 0.625rem;
   box-shadow: 0px 10px 30px 0px hsla(234, 84%, 25%, 0.15);
   &.buttonSecondary {
     background: #fff;
