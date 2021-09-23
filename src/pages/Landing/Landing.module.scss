@@ -1,9 +1,12 @@
 @import "../../../styles/config/variables";
 @import "../../../styles/config/mixins";
-.navbar {
+.navbar, .hero {
   max-width: 1280px;
-  padding: 2.5rem 2rem;
   margin: 0 auto;
+}
+
+.navbar {
+  padding: 2.5rem 2rem;
 }
 
 .tag {
@@ -34,7 +37,7 @@
 }
 
 .hero {
-  margin: 1rem 4rem;
+  margin-top: 2rem;
   background: url("../../../public/heroBackground.svg") no-repeat right;
   position: relative;
   h1 {
@@ -46,7 +49,6 @@
 }
 
 .devices {
-  height: 100vh;
   width: 100%;
   margin-top: 3rem;
   padding-top: 10rem;
@@ -55,5 +57,12 @@
   background-position: top;
   h1 {
     max-width: 900px !important;
+  }
+  .devicesImages {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .device{
+      padding: 1rem !important;
+    }
   }
 }
