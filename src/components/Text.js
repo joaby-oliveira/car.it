@@ -1,6 +1,6 @@
-export const Text = ({children}) => {
+export const Text = ({children, white}) => {
   return (
-    <p className="text">
+    <p className={`text ${white ? 'white' : ''}`}>
       {children}
     </p>
   )
