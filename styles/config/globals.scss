@@ -80,6 +80,9 @@ span,
   max-width: 30rem;
   color: $color-primary-1;
   margin-top: 1.25rem;
+  &.white {
+    color: $color-secondary-3;
+  }
 }
 
 // Flex

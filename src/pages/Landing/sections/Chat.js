@@ -4,7 +4,7 @@ import styles from '../Landing.module.scss'
 import chatSmartphone from '../../../../public/chatSmartphone.png'
 import { Text } from '../../../components/Text'
 
-const Devices = () => {
+const Chat = () => {
   return (
     <section className={`${styles.chat} flex mainCenter crossCenter`}>
       <Image src={chatSmartphone} />
@@ -18,4 +18,4 @@ const Devices = () => {
   )
 }
 
-export default Devices
+export default Chat
