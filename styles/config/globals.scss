@@ -10,7 +10,7 @@ h3,
 h4,
 p,
 span,
-.button{
+.button {
   font-family: $title-font;
 }
 
@@ -20,9 +20,16 @@ span,
   margin: 0 auto;
 }
 
-h1 {
+.title {
   max-width: 45rem;
   @include title-1;
+  color: $color-primary-3;
+  &.white {
+    color: $color-secondary-3;
+  }
+  &.center {
+    text-align: center;
+  }
   span {
     color: $color-enphasis-3;
   }
@@ -63,7 +70,7 @@ h1 {
     background: $color-enphasis-1;
   }
   svg {
-    margin-left: .625rem;
+    margin-left: 0.625rem;
   }
 }
 
