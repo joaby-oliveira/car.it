@@ -1,0 +1,50 @@
+@import '../../../../../styles/config/variables';
+
+.cars {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(115.63deg, #0A1476 -96.33%, #090A11 100%);
+  .leftCategories,
+  .rightCategories {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    margin: 0 2.5rem;
+    &.leftCategories {
+      left: 0;
+    }
+    &.rightCategories {
+      right: 0;
+      p {
+        transform: rotate(180deg);
+      }
+    }
+    .spacerCircle {
+      display: block;
+      width: .5rem;
+      height: .5rem;
+      margin: 1rem;
+      border-radius: 50%;
+      background: $color-secondary-3;
+      opacity: .1;
+    }
+    p {
+      font-size: 1.125rem;
+      letter-spacing: .625rem;
+      color: $color-secondary-3;
+      writing-mode: vertical-lr;
+      opacity: .3;
+      transition: 0.2s;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+  .carousel {
+    width: 40rem;
+    img {
+      border-radius: 1.25rem;
+    }
+  }
+}
