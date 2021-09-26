@@ -4,6 +4,11 @@
   height: 100vh;
   position: relative;
   background: linear-gradient(115.63deg, #0A1476 -96.33%, #090A11 100%);
+  display: flex;
+  .carousel {
+    display: flex;
+    align-items: center;
+  }
   .leftCategories,
   .rightCategories {
     position: absolute;
@@ -43,6 +48,18 @@
   }
   .carousel {
     width: 40rem;
+    position: relative;
+    .arrow {
+      z-index: 10;
+      position: absolute;
+      cursor: pointer;
+      &.prevArrow {
+        left: 1.25rem;
+      }
+      &.nextArrow {
+        right: 1.25rem;
+      }
+    }
     img {
       border-radius: 1.25rem;
     }

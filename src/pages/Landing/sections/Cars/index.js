@@ -15,11 +15,25 @@ import minivan from "../../../../../public/minivan.png"
 import sedan from "../../../../../public/sedan.png"
 import coupe from "../../../../../public/coupe.png"
 
-
-
-
-
 const Cars = () => {
+
+  function PrevArrow({ onClick }) {
+    return (
+      <svg className={`${styles.arrow} ${styles.prevArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 2L2 25L25 48" stroke="white" stroke-width="4" stroke-linejoin="round" />
+      </svg>
+    )
+  }
+
+  function NextArrow({ onClick }) {
+    return (
+      <svg className={`${styles.arrow} ${styles.nextArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L25 25L2 48" stroke="white" stroke-width="4" stroke-linejoin="round" />
+      </svg>
+
+    )
+  }
+
   const carsImages = [
     suv,
     hatch,
@@ -35,7 +49,9 @@ const Cars = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   }
 
   return (
@@ -54,7 +70,7 @@ const Cars = () => {
         <span className={styles.spacerCircle}></span>
         <p>MOTOS</p>
       </div>
-      <Slider className={styles.carousel} {...configs}>
+      <Slider className={`${styles.carousel}`} {...configs}>
         {
           carsImages.map((carImage) => {
             return (

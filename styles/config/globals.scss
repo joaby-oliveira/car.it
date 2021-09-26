@@ -14,6 +14,26 @@ span,
   font-family: $title-font;
 }
 
+.slick-dots {
+  li {
+    button {
+      &::before {
+        top: 20px !important;
+        color: $color-secondary-3 !important;
+        font-size: 1.25rem !important;
+      }
+    }
+    &.slick-active {
+      button {
+        &::before {
+          font-size: 1.25rem !important;
+          color: $color-secondary-3 !important;
+        }
+      }
+    }
+  }
+}
+
 .container {
   max-width: 1280px;
   padding: 0 2.5rem;
