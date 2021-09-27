@@ -1,2 +1,8 @@
 @import "../../../styles/config/variables";
 @import "../../../styles/config/mixins";
+
+.forgotPass {
+  text-decoration: none;
+  color: $color-enphasis-3;
+  font-size: 1rem;
+}
