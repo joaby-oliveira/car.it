@@ -53,20 +53,22 @@ export const Cars = () => {
     nextArrow: <NextArrow />,
   }
   return (
-    <div className={`${styles.cars} flex mainCenter crossCenter`}>
-      <div className={`${styles.leftCategories} flex column mainAround crossCenter`}>
-        <p>HATCHES</p>
-        <span className={styles.spacerCircle}></span>
-        <p>WAGONS</p>
-        <span className={styles.spacerCircle}></span>
-        <p>SEDANS</p>
-      </div>
-      <div className={`${styles.rightCategories} flex column mainAround crossCenter`}>
-        <p>SUVs</p>
-        <span className={styles.spacerCircle}></span>
-        <p>MINIVÃS</p>
-        <span className={styles.spacerCircle}></span>
-        <p>MOTOS</p>
+    <section className={`${styles.cars} flex mainCenter crossCenter`}>
+      <div className={styles.carsCategories}>
+        <div className={`${styles.leftCategories} flex column mainAround crossCenter`}>
+          <p>HATCHES</p>
+          <span className={styles.spacerCircle}></span>
+          <p>WAGONS</p>
+          <span className={styles.spacerCircle}></span>
+          <p>SEDANS</p>
+        </div>
+        <div className={`${styles.rightCategories} flex column mainAround crossCenter`}>
+          <p>SUVs</p>
+          <span className={styles.spacerCircle}></span>
+          <p>MINIVÃS</p>
+          <span className={styles.spacerCircle}></span>
+          <p>MOTOS</p>
+        </div>
       </div>
       <Slider className={`${styles.carousel}`} {...configs}>
         {
@@ -77,6 +79,6 @@ export const Cars = () => {
           })
         }
       </Slider>
-    </div>
+    </section>
   )
 }
