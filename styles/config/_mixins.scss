@@ -3,3 +3,8 @@
   font-size: $title-1-size;
   font-weight: 700;
 }
+
+@mixin paragraph-2 {
+  font: $font-paragraph-2;
+  color: $color-primary-1;
+}
