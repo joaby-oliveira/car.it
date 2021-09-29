@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav className={`${styles.navbar} flex spaceBetween`}>
       <Logo />
-      <div className={`flex `}>
+      <div className={`${styles.buttonContainer} flex`}>
         <Button secondary={true} href="/login">Entrar</Button>
         <Button href="/criar-conta">Criar Conta</Button>
       </div>

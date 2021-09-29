@@ -2,4 +2,11 @@
 
 .navbar {
   padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  .buttonContainer {
+    & + a {
+      margin-left: 1.25rem;
+    }
+  }
 }
