@@ -1,0 +1,20 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/config/mixins';
+
+.title {
+  max-width: 45rem;
+  @include title-1;
+  color: $color-primary-2;
+
+  &.white {
+    color: $color-secondary-3;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  span {
+    color: $color-enphasis-3;
+  }
+}

@@ -1,8 +1,11 @@
-import Button from '../../components/Button';
-import Box from '../../components/Box';
+// Import styles
+import { Button } from '../../components/Button';
+import { Box } from '../../components/Box';
+
+// Import styles 
 import styles from './styles.module.scss';
 
-const index = () => {
+const Login = () => {
   return (
     <div>
       <Box>
@@ -15,4 +18,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Login

@@ -1,11 +1,14 @@
+// Import Next.js components
 import Image from "next/image"
+
+// Import libs
 import Slider from "react-slick"
 
 // Import slick css styles 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-// Import styles file
+// Import styles
 import styles from './styles.module.scss'
 
 // Import images
@@ -15,8 +18,7 @@ import minivan from "../../../../../public/minivan.png"
 import sedan from "../../../../../public/sedan.png"
 import coupe from "../../../../../public/coupe.png"
 
-const Cars = () => {
-
+export const Cars = () => {
   function PrevArrow({ onClick }) {
     return (
       <svg className={`${styles.arrow} ${styles.prevArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +26,6 @@ const Cars = () => {
       </svg>
     )
   }
-
   function NextArrow({ onClick }) {
     return (
       <svg className={`${styles.arrow} ${styles.nextArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +34,6 @@ const Cars = () => {
 
     )
   }
-
   const carsImages = [
     suv,
     hatch,
@@ -41,7 +41,6 @@ const Cars = () => {
     sedan,
     coupe
   ]
-
   const configs = {
     dots: true,
     infinite: true,
@@ -53,7 +52,6 @@ const Cars = () => {
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   }
-
   return (
     <div className={`${styles.cars} flex mainCenter crossCenter`}>
       <div className={`${styles.leftCategories} flex column mainAround crossCenter`}>
@@ -82,5 +80,3 @@ const Cars = () => {
     </div>
   )
 }
-
-export default Cars

@@ -1,11 +1,16 @@
-import Tag from '../components/Tag'
-import Button from '../../../components/Button'
-import styles from '../Landing.module.scss'
+// Import icons
 import { ArrowRight } from 'react-feather'
-import { Title } from '../../../components/Title'
-import { Text } from '../../../components/Text'
 
-const Hero = () => {
+// Import components
+import { Tag } from '../../../../components/Tag'
+import { Button } from '../../../../components/Button'
+import { Title } from '../../../../components/Title'
+import { Text } from '../../../../components/Text'
+
+// Import styles 
+import styles from './styles.module.scss'
+
+export const Hero = () => {
   return (
     <section className={`${styles.hero} flex column crossStart`}>
       <Tag>Novidade</Tag>
@@ -18,5 +23,3 @@ const Hero = () => {
     </section>
   )
 }
-
-export default Hero

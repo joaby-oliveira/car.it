@@ -1,5 +1,8 @@
+// Import Next.js components
 import Head from 'next/head'
-import Landing from './Landing/Landing'
+
+// Import components
+import Landing from './Landing'
 
 export default function Home() {
   return (

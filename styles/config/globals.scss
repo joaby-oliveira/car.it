@@ -24,6 +24,7 @@ span,
         font-size: 1.25rem !important;
       }
     }
+
     &.slick-active {
       button {
         &::before {
@@ -41,78 +42,22 @@ span,
   margin: 0 auto;
 }
 
-.title {
-  max-width: 45rem;
-  @include title-1;
-  color: $color-primary-2;
-  &.white {
-    color: $color-secondary-3;
-  }
-  &.center {
-    text-align: center;
-  }
-  span {
-    color: $color-enphasis-3;
-  }
-}
-
-.button {
-  font-size: 1.125rem;
-  font-weight: 700;
-  background: $color-enphasis-3;
-  padding: 1.25rem 2.5rem;
-  color: $color-secondary-3;
-  border-radius: 1000px;
-  box-shadow: 0px 10px 30px 0px hsla(234, 84%, 25%, 0.15);
-  display: inline-block;
-  transition: 0.2s;
-  justify-content: center;
-  &.fillParent {
-    width: 100%;
-  }
-  &.buttonSecondary {
-    background: #fff;
-    color: $color-primary-3;
-    box-shadow: none;
-    &:hover {
-      background: $color-secondary-1;
-    }
-    &:active {
-      background: $color-enphasis-2;
-    }
-    &:focus {
-      background: $color-secondary-2;
-    }
-  }
-  &:hover {
-    background: $color-enphasis-4;
-  }
-  &:active {
-    background: $color-enphasis-2;
-  }
-  &:focus {
-    background: $color-enphasis-1;
-  }
-  svg {
-    margin-left: 0.625rem;
-  }
-}
-
 .text {
   font-size: 1rem;
   font-weight: 400;
   max-width: 30rem;
   color: $color-primary-1;
   margin-top: 1.25rem;
+
   &.white {
     color: $color-secondary-3;
   }
 }
 
-  .box {
-    box-shadow: 0px 20px 70px 0px #2427421A;
-    padding: 1.25rem 5rem;
-  }
+.box {
+  box-shadow: 0px 20px 70px 0px #2427421A;
+  padding: 1.25rem 5rem;
+}
 
 // Flex
 .flex {

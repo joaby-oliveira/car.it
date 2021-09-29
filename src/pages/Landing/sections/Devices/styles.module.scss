@@ -1,0 +1,24 @@
+@import '../../../../../styles/config/variables';
+
+.devices {
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 10rem;
+
+  background: url("../../../../../public/lal.svg") no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  h1 {
+    max-width: 900px !important;
+  }
+
+  .devicesImages {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .device {
+      padding: 1rem !important;
+    }
+  }
+}

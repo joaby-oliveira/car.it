@@ -1,8 +1,11 @@
-import styles from '../Landing.module.scss'
-import Button from '../../../components/Button'
-import Logo from '../../../components/Logo'
+// Import styles
+import styles from './styles.module.scss'
 
-const Navbar = () => {
+// Import button from 
+import {Button} from '../Button'
+import Logo from '../Logo'
+
+export const Navbar = () => {
   return (
     <nav className={`${styles.navbar} flex spaceBetween`}>
       <Logo />
@@ -13,5 +16,3 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar

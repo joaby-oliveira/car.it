@@ -1,10 +1,17 @@
+// Import Nexts.js components
 import Image from 'next/image'
-import { Title } from '../../../components/Title'
-import styles from '../Landing.module.scss'
-import chatSmartphone from '../../../../public/chatSmartphone.png'
-import { Text } from '../../../components/Text'
 
-const Chat = () => {
+// Import components
+import { Title } from '../../../../components/Title'
+import { Text } from '../../../../components/Text'
+
+// Import styles
+import styles from './styles.module.scss'
+
+// Import images
+import chatSmartphone from '../../../../../public/chatSmartphone.png'
+
+export const Chat = () => {
   return (
     <section className={`${styles.chat} flex mainCenter crossCenter`}>
       <Image src={chatSmartphone} />
@@ -17,5 +24,3 @@ const Chat = () => {
     </section>
   )
 }
-
-export default Chat

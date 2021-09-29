@@ -1,10 +1,17 @@
+// Import Next.js components
 import Image from 'next/image'
-import { Title } from '../../../components/Title'
-import styles from '../Landing.module.scss'
-import newCarIlustration from '../../../../public/newCarIlustration.svg'
-import { Text } from '../../../components/Text'
 
-const NewCar = () => {
+// Import styles
+import styles from './styles.module.scss'
+
+// Import SVGs
+import newCarIlustration from '../../../../../public/newCarIlustration.svg'
+
+// Import components
+import { Title } from '../../../../components/Title'
+import { Text } from '../../../../components/Text'
+
+export const NewCar = () => {
   return (
     <section className={`${styles.newCar} flex mainCenter crossCenter`}>
       <div className="flex column mainCenter crossCenter">
@@ -19,5 +26,3 @@ const NewCar = () => {
     </section>
   )
 }
-
-export default NewCar
