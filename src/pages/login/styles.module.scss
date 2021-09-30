@@ -1,7 +1,41 @@
 @import "../../../styles/config/variables";
 
 .forgotPass {
+  font: $font-text;
+  font-weight: 700;
   text-decoration: none;
   color: $color-enphasis-3;
   font-size: 1rem;
+}
+
+.btnContainer {
+  color: white;
+}
+
+.loginTitle {
+  font: $font-title;
+}
+
+.loginSubtitle {
+  color: $color-secondary-3;
+  font: $font-subtitle;
+}
+
+.loginText {
+  font: $font-text;
+  a {
+    font-weight: 700;
+    color: $color-primary-2;
+  }
+}
+
+.loginLS {
+  color: white;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(162.73deg, #616BD1 0%, #2C3BD1 100%);
+}
+
+.loginRS {
+  width: 50%;
 }
