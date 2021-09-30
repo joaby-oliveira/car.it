@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
 @import "variables";
 @import "mixins";
@@ -42,6 +42,10 @@ span,
   margin: 0 auto;
 }
 
+.fullHeight {
+  height: 100vh;
+}
+
 .text {
   font-size: 1rem;
   font-weight: 400;
@@ -57,6 +61,8 @@ span,
 .box {
   box-shadow: 0px 20px 70px 0px #2427421A;
   padding: 1.25rem 5rem;
+  border-radius: 20px;
+  width: 70%;
 }
 
 // Flex

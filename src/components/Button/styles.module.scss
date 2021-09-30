@@ -1,23 +1,45 @@
 @import '../../../styles/config/variables';
 
 .button {
-  display: inline-block;
   padding: 1.25rem 2.5rem;
-  justify-content: center;
-  
   transition: 0.2s;
-
   font-size: 1.125rem;
   font-weight: 700;
-
-  border-radius: 1000px;
+  border-radius: 50px;
   background: $color-enphasis-3;
   color: $color-secondary-3;
   box-shadow: 0px 10px 30px 0px hsla(234, 84%, 25%, 0.15);
 
   &.fillParent {
     width: 100%;
+
+    // &.spacer{
+    //   position: relative;
+    //   margin-bottom: 3.75rem;
+
+    //   &::after {
+    //     position: absolute;
+    //     bottom: 0;
+    //     margin-bottom: -1.25rem;
+    //     background-color: $color-secondary-2;
+    //     display: block;
+    //     content: "";
+    //     height: .0625rem;
+    //     width: calc(100% + 2.5rem);
+    //  }
+    // }
+    
+    &.google {
+      background: $color-google;
+      box-shadow: 0px 10px 30px rgba(234, 67, 53, 0.25);
+    }
+
+    &.facebook {
+      background: $color-facebook;
+      box-shadow: 0px 10px 30px rgba(59, 89, 152, 0.25);
+    }
   }
+
 
   &.buttonSecondary {
     background: #fff;
