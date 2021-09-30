@@ -7,6 +7,7 @@ import { Devices } from "./sections/Devices"
 import { Chat } from "./sections/Chat"
 import { NewCar } from "./sections/NewCar"
 import { Cars } from "./sections/Cars"
+import { Footer } from "./sections/Footer"
 
 const Landing = () => {
   return (
@@ -17,6 +18,7 @@ const Landing = () => {
       <Chat />
       <NewCar />
       <Cars />
+      <Footer />
     </div>
   )
 }

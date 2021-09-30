@@ -65,6 +65,12 @@ span,
   width: 70%;
 }
 
+// Max width
+.maxWidth {
+  max-width: 1200px;
+  margin: initial auto;
+}
+
 // Flex
 .flex {
   display: flex;

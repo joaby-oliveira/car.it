@@ -1,0 +1,62 @@
+@import '../../../../../styles/config/variables';
+@import '../../../../../styles/config/mixins';
+
+.footer {
+  width: 100%;
+  padding: 2.5rem;
+  background: $color-primary-3;
+
+  .superior {
+    width: 100%;
+
+    .getApp {
+      p {
+        @include paragraph-2;
+        margin-bottom: 1.25rem;
+      }
+
+      a {
+        transition: 0.2s filter;
+
+        &:hover {
+          filter: brightness(.5);
+        }
+
+        &:active {
+          filter: brightness(.1);
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid $color-primary-2;
+
+    a {
+      transition: 0.2s color;
+      font-weight: 700;
+
+      &:hover {
+        color: $color-secondary-1
+      }
+    }
+
+    .spacer {
+      display: block;
+      content: '';
+      margin: 0 .625rem;
+      width: .4rem;
+      height: .4rem;
+      border-radius: 50%;
+      background: $color-primary-2;
+    }
+
+
+  }
+
+  * {
+    @include paragraph-2;
+  }
+}

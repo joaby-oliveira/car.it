@@ -5,6 +5,12 @@
   position: relative;
   background: linear-gradient(115.63deg, #0A1476 -96.33%, #090A11 100%);
   display: flex;
+  .carsCategories {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    position: absolute;
+  }
   .carousel {
     display: flex;
     align-items: center;

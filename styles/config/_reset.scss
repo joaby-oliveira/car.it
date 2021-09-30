@@ -12,3 +12,7 @@ li {
 a {
   text-decoration: none;
 }
+
+a, img {
+  -webkit-user-drag: none;
+}
