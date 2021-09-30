@@ -1,10 +1,6 @@
 @import 'variables';
-@mixin title-1 {
-  font-size: $title-1-size;
-  font-weight: 700;
-}
 
-@mixin paragraph-2 {
-  font: $font-paragraph-2;
+@mixin paragraph {
+  font: $font-paragraph;
   color: $color-primary-1;
 }

@@ -11,7 +11,7 @@
 
     .getApp {
       p {
-        @include paragraph-2;
+        @include paragraph;
         margin-bottom: 1.25rem;
       }
 
@@ -57,6 +57,6 @@
   }
 
   * {
-    @include paragraph-2;
+    @include paragraph;
   }
 }

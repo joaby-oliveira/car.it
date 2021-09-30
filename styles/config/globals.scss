@@ -4,17 +4,6 @@
 @import "mixins";
 @import "reset";
 
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-span,
-.button {
-  font-family: $title-font;
-}
-
 .slick-dots {
   li {
     button {
@@ -44,18 +33,6 @@ span,
 
 .fullHeight {
   height: 100vh;
-}
-
-.text {
-  font-size: 1rem;
-  font-weight: 400;
-  max-width: 30rem;
-  color: $color-primary-1;
-  margin-top: 1.25rem;
-
-  &.white {
-    color: $color-secondary-3;
-  }
 }
 
 .box {

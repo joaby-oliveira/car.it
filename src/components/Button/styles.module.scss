@@ -1,9 +1,9 @@
 @import '../../../styles/config/variables';
 
 .button {
+  font: $font-text;
   padding: 1.25rem 2.5rem;
   transition: 0.2s;
-  font-size: 1.125rem;
   font-weight: 700;
   border-radius: 50px;
   background: $color-enphasis-3;

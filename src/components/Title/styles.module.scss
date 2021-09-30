@@ -3,8 +3,8 @@
 
 .title {
   max-width: 45rem;
-  @include title-1;
   color: $color-primary-2;
+  font: $font-title;
 
   &.white {
     color: $color-secondary-3;
