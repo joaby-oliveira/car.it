@@ -18,13 +18,15 @@ Here's a guide to set up this in your machine:
 
 ------
 
-## Index
+## Components index
 
-| Themes                                               | Link                      |
-| ---------------------------------------------------- | ------------------------- |
-| Wanna know how does this project's components works? | [Click here](#Components) |
-
-
+| Themes | Link                  |
+| ------ | --------------------- |
+| Title  | [Click here](#Title)  |
+| Text   | [Click here](#Text)   |
+| Logo   | [Click here](#Logo)   |
+| Box    | [Click here](#Box)    |
+| Button | [Click here](#Button) |
 
 ## Components
 
