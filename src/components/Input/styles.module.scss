@@ -1,0 +1,17 @@
+@import '../../../styles/config/variables';
+
+.formsInput {
+  font-family: $text-font;
+  font-weight: 400;
+  padding: 1.25rem;
+  border-radius: 30px;
+  border: $forms-border;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(9, 10, 17, 0.05);
+}
+
+.formsLabel {
+  font-family: $title-font;
+  font-weight: 700;
+}
