@@ -1,15 +1,41 @@
 @import "../../../styles/config/variables";
 
+.arrowBox {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09);
+  border-radius: .9375rem;
+  margin-right: 2.5rem;
+  height: fit-content;
+  padding: .625rem;
+  svg {
+    margin-bottom: -0.25rem;
+  }
+  a:active {
+    color: $color-primary-4;
+  }
+}
+
 .forgotPass {
   font: $font-text;
   font-weight: 700;
   text-decoration: none;
   color: $color-enphasis-3;
   font-size: 1rem;
+  display: block;
+  margin-bottom: 2.5rem;
 }
 
 .btnContainer {
   color: white;
+  width: 100%;
+  a {
+    width: 50%;
+    &:nth-child(1){
+      margin-right: .625rem;
+    }
+    &:nth-child(2){
+      margin-left: .625rem;
+    }
+  }
 }
 
 .loginTitle {
@@ -22,6 +48,7 @@
 }
 
 .loginText {
+  margin: 1.25rem;
   font: $font-text;
   a {
     font-weight: 700;
@@ -33,9 +60,25 @@
   color: white;
   height: 100%;
   width: 50%;
-  background: linear-gradient(162.73deg, #616BD1 0%, #2C3BD1 100%);
+  background: linear-gradient(162.73deg, #616bd1 0%, #2c3bd1 100%);
+  .logoLogin {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+  p, h1{
+    margin-bottom: 1.25rem;
+  }
 }
 
 .loginRS {
   width: 50%;
+  padding: 0 5rem 0 2.5rem;
+  .logoLogin {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.formsLogin {
+  width: 100%;
 }
