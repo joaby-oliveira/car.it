@@ -1,10 +1,10 @@
 @import '../../../styles/config/variables';
 
 .button {
-  font: $font-text;
+  font: 700 1.125rem Poppins, sans-serif;
+  
   padding: 1.25rem 2.5rem;
   transition: 0.2s;
-  font-weight: 700;
   border-radius: 50px;
   background: $color-enphasis-3;
   color: $color-secondary-3;
