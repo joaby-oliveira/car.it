@@ -34,10 +34,10 @@ Here's a guide to set up this in your machine:
 
 The `<Title></Title>` component accepts the following properties:
 
-| Propertie | **Type**  | Description                                    | Optional | Image |
-| --------- | --------- | ---------------------------------------------- | -------- | ----- |
-| `white`   | `boolean` | If true changes the color of the text to white | Yes      |       |
-| `center`  | `boolean` | If true changes the text alignment to center   | Yes      |       |
+| Propertie | **Type**  | Description                                    | Optional |
+| --------- | --------- | ---------------------------------------------- | -------- |
+| `white`   | `boolean` | If true changes the color of the text to white | Yes      |
+| `center`  | `boolean` | If true changes the text alignment to center   | Yes      |
 
 ------
 
