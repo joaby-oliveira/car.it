@@ -32,11 +32,33 @@
     &.google {
       background: $color-google;
       box-shadow: 0px 10px 30px rgba(234, 67, 53, 0.25);
+      &:hover {
+        background: $hover-google;
+      }
+  
+      &:active {
+        background: $active-google;
+      }
+  
+      &:focus {
+        background: $focus-google;
+      }
     }
 
     &.facebook {
       background: $color-facebook;
       box-shadow: 0px 10px 30px rgba(59, 89, 152, 0.25);
+      &:hover {
+        background: $hover-facebook;
+      }
+  
+      &:active {
+        background: $active-facebook;
+      }
+  
+      &:focus {
+        background: $focus-facebook;
+      }
     }
   }
 
