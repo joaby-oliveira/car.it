@@ -1,5 +1,19 @@
 @import '../../../../../styles/config/variables';
 
+@media (max-width: $breakPoint) {
+  section.chat {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 5rem 0;
+    header {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+}
+
 .chat {
   padding: 5rem;
 

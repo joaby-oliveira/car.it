@@ -4,6 +4,12 @@
 @import "mixins";
 @import "reset";
 
+@media (max-width: $breakPoint) {
+  :root {
+    font-size: 75% !important;
+  }
+}
+
 .slick-dots {
   li {
     button {

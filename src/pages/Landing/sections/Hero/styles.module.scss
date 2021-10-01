@@ -1,5 +1,12 @@
 @import '../../../../../styles/config/variables';
 
+@media (max-width: $breakPoint) {
+  section.hero {
+    padding: 1.25rem;
+    background: none;
+  }
+}
+
 .hero {
   margin-top: 2rem;
   position: relative;

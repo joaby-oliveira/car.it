@@ -1,6 +1,14 @@
 @import '../../../../../styles/config/variables';
 @import '../../../../../styles/config/mixins';
 
+@media (max-width: $breakPoint) {
+  footer.footer {
+    .bottom p {
+      margin-right: 1rem;
+    }
+  }
+}
+
 .footer {
   width: 100%;
   padding: 2.5rem;

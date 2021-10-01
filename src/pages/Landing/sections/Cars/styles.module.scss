@@ -1,35 +1,55 @@
 @import '../../../../../styles/config/variables';
 
+@media (max-width: $breakPoint) {
+  .cars {
+    div.carousel {
+      width: 80%;
+    }
+
+    div.leftCategories,
+    div.rightCategories {
+      margin: 0;
+    }
+  }
+}
+
 .cars {
   height: 100vh;
   position: relative;
   background: linear-gradient(115.63deg, #0A1476 -96.33%, #090A11 100%);
   display: flex;
+
   .carsCategories {
     width: 100%;
     height: 100%;
     max-width: 1400px;
     position: absolute;
   }
+
   .carousel {
     display: flex;
     align-items: center;
   }
+
   .leftCategories,
   .rightCategories {
     position: absolute;
     top: 0;
     height: 100%;
     margin: 0 2.5rem;
+
     &.leftCategories {
       left: 0;
     }
+
     &.rightCategories {
       right: 0;
+
       p {
         transform: rotate(180deg);
       }
     }
+
     .spacerCircle {
       display: block;
       width: .5rem;
@@ -39,6 +59,7 @@
       background: $color-secondary-3;
       opacity: .1;
     }
+
     p {
       font: $font-text;
       letter-spacing: .625rem;
@@ -46,26 +67,32 @@
       writing-mode: vertical-lr;
       opacity: .3;
       transition: 0.2s;
+
       &:hover {
         opacity: 1;
         cursor: pointer;
       }
     }
   }
+
   .carousel {
     width: 40rem;
     position: relative;
+
     .arrow {
       z-index: 10;
       position: absolute;
       cursor: pointer;
+
       &.prevArrow {
         left: 1.25rem;
       }
+
       &.nextArrow {
         right: 1.25rem;
       }
     }
+
     img {
       border-radius: 1.25rem;
     }

@@ -1,5 +1,11 @@
 @import '../../../styles/config/variables';
 
+@media (max-width: $breakPoint) {
+  p.text {
+    font-size: 1.33rem;
+  }
+}
+
 .text {
   font: $font-text;
   max-width: 30rem;

@@ -1,5 +1,16 @@
 @import '../../../../../styles/config/variables';
 
+@media (max-width: $breakPoint) {
+  section.devices {
+    padding: 10rem 1.25rem 5rem 1.25rem;
+    .devicesImages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 .devices {
   width: 100%;
   margin-top: 3rem;

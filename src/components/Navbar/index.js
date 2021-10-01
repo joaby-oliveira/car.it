@@ -10,7 +10,7 @@ import Logo from '../Logo'
 
 export const Navbar = () => {
   return (
-    <nav className={`${styles.navbar} flex spaceBetween`}>
+    <nav className={`${styles.navbar} flex spaceBetween crossCenter`}>
       <Link href="/">
         <a><Logo /></a>
       </Link>
