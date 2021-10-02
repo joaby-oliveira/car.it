@@ -1,4 +1,8 @@
+// Import Next.js 
+import Link from 'next/link'
+
 // Import components
+import Head from 'next/head'
 import { Button } from '../../components/Button';
 import { Box } from '../../components/Box';
 import { Input } from '../../components/Input';
@@ -12,7 +16,14 @@ import styles from './styles.module.scss';
 
 const Login = () => {
   return (
+    
     <div className={`flex crossCenter mainCenter fullHeight`}>
+      <Head>
+        <title>Car.it | Login</title>
+        <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className={`${styles.loginLS} flex column mainCenter crossCenter`}>
         <Logo className={`${styles.logoLogin}`} white={true} />
         <h1 className={`${styles.loginTitle}`}>Faça seu login</h1>
@@ -23,7 +34,9 @@ const Login = () => {
       <div className={`${styles.loginRS} flex mainCenter`}>
 
         <div className={`${styles.arrowBox} flex`}>
-          <a href="/"><FiChevronLeft size={30}/></a>
+          <Link href="/">
+            <a href="/"><FiChevronLeft size={30}/></a>
+          </Link>
         </div>
         
 
