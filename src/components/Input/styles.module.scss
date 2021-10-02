@@ -1,15 +1,22 @@
 @import '../../../styles/config/variables';
 
-.formsInput {
-  font: $font-text;
-  padding: 1.25rem;
-  border-radius: 30px;
-  border: $forms-border;
+.inputBlock {
   margin-bottom: 1.25rem;
-  box-shadow: 0px 10px 30px rgba(9, 10, 17, 0.05);
-}
+  input {
+    font: $font-text;
+    padding: .625rem 1.25rem;
+    border-radius: 30px;
+    border: $forms-border;
+    box-shadow: 0px 10px 30px rgba(9, 10, 17, 0.05);
+  }  
+  label {
+    font: $font-label;
+    font-weight: 700;
+  }  
+  .error {
+    font: $font-text;
+    color: $color-error;
+    margin-top: .625rem;
+  }
+}  
 
-.formsLabel {
-  font: $font-label;
-  font-weight: 700;
-}
