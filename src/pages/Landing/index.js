@@ -11,7 +11,7 @@ import { Footer } from "./sections/Footer"
 
 const Landing = () => {
   return (
-    <div>
+    <div animationType="rightToLeft">
       <Navbar />
       <Hero />
       <Devices />

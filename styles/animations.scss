@@ -1,0 +1,31 @@
+// Left to right animation
+[animationType="leftToRight"] {
+  transform: translate3d(-10rem, 0, 0);
+  animation: leftToRight forwards .4s;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transition: 0.4s;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+// Right to left animation
+[animationType="rightToLeft"] {
+  transform: translate3d(10rem, 0, 0);
+  animation: leftToRight forwards .4s;
+}
+
+@keyframes rightToLeft {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
