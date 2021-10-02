@@ -10,6 +10,21 @@
   }
 }
 
+body {
+  &::-webkit-scrollbar {
+    width: .625rem;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 5rem;
+    background: $color-secondary-3;
+  } 
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: $color-primary-1;
+    width: 10px !important;
+  } 
+}
+
 .slick-dots {
   li {
     button {
