@@ -12,7 +12,7 @@ import { Footer } from "./sections/Footer"
 const Landing = () => {
   return (
     <div animationType="rightToLeft">
-      <Navbar />
+      <Navbar landing={true} />
       <Hero />
       <Devices />
       <Chat />
