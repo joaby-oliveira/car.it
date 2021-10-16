@@ -1,5 +1,9 @@
 @import '../../../styles/config/variables';
-
+.searchButton {
+  div {
+    font-weight: 300 !important;
+  }
+}
 .button {
   font: 700 1.125rem Poppins, sans-serif;
   
