@@ -1,12 +1,32 @@
 @import '../../../styles/config/variables';
 
-.navbar {
+.landingNavbar {
   padding: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
   .buttonContainer {
     & + a {
       margin-left: 1.25rem;
+    }
+  }
+}
+
+.navbar {
+  background: #393D60;
+  width: 100%;
+  padding: .625rem 1.25rem;
+  & > svg {
+    height: 3.125rem;
+  }
+  .icons {
+    color: #fff;
+  }
+  .navItem {
+    & + .navItem {
+      margin-left: 1.25rem;
+    } 
+    p {
+      margin-left: .3125rem;
     }
   }
 }
