@@ -33,6 +33,7 @@ const Login = () => {
     const result = await fetch('http://localhost:8080/user/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credential: 'same-origin',
       body: JSON.stringify({
         email: email.value,
         password: password.value
@@ -73,13 +74,13 @@ const Login = () => {
           <Logo className={`${styles.logoLogin}`} />
 
           <form onSubmit={auth} className={`${styles.formsLogin}`}>
-            <Input label="Email" name="email" {...email} placeholder="Ex.: email@dominio.com" />
-            <Input label="Senha" name="password" {...password} placeholder="No mínimo 8 caracteres" />
+            <Input isEmail={true} label="Email" name="email" {...email} placeholder="Ex.: email@dominio.com" />
+            <Input isPassword={true} label="Senha" name="password" {...password} placeholder="No mínimo 8 caracteres" />
             <a className={`${styles.forgotPass}`} href="/forgotpass">Esqueceu a senha?</a>
             <Button form={true} fillParent={true} spacer={true} href="/" >Entrar</Button>
           </form>
 
-          <h3 className={`${styles.loginText}`}>{loginErrorMessage}</h3>
+          <p className={`error`}>{loginErrorMessage}</p>
           <div className={`${styles.btnContainer} flex`}>
             <Button fillParent={true} google={true} href="/"> <FaGoogle /> </Button>
             <Button fillParent={true} facebook={true} href="/"> <FaFacebookF /> </Button>
