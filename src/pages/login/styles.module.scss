@@ -41,10 +41,10 @@
   }
   a {
     width: 50%;
-    &:nth-child(1){
+    &:nth-child(1) {
       margin-right: .625rem;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: .625rem;
     }
   }
@@ -78,7 +78,8 @@
     top: 2.5rem;
     left: 2.5rem;
   }
-  p, h1{
+  p,
+  h1 {
     margin-bottom: 1.25rem;
   }
 }
@@ -93,4 +94,8 @@
 
 .formsLogin {
   width: 100%;
+}
+
+.loginErrorMessage {
+  color: $color-error;
 }
