@@ -1,25 +1,25 @@
-$color-primary-1: #393D60; 
-$color-primary-2: #242742; 
-$color-primary-3: #121321; 
-$color-primary-4: #090A11; 
+$color-primary-1: #393d60;
+$color-primary-2: #242742;
+$color-primary-3: #121321;
+$color-primary-4: #090a11;
 
-$color-secondary-1: #666B99; 
-$color-secondary-2: #ADB3EB; 
-$color-secondary-3: #F0F0F0; 
+$color-secondary-1: #666b99;
+$color-secondary-2: #adb3eb;
+$color-secondary-3: #f0f0f0;
 
-$color-enphasis-1: #616BD1;
-$color-enphasis-2: #4754D1;
-$color-enphasis-3: #2C3BD1;
-$color-enphasis-4: #1F2CAD;
-$color-enphasis-5: #16239C;
-$color-enphasis-6: #0A1476;
+$color-enphasis-1: #616bd1;
+$color-enphasis-2: #4754d1;
+$color-enphasis-3: #2c3bd1;
+$color-enphasis-4: #1f2cad;
+$color-enphasis-5: #16239c;
+$color-enphasis-6: #0a1476;
 
-$color-google: #EA4335;
+$color-google: #ea4335;
 $hover-google: #cc3426;
 $active-google: #fd5a4b;
 $focus-google: #f15142;
 
-$color-facebook: #3B5998;
+$color-facebook: #3b5998;
 $hover-facebook: #2d4883;
 $active-facebook: #5475bb;
 $focus-facebook: #4a6aaf;
@@ -27,6 +27,7 @@ $focus-facebook: #4a6aaf;
 $color-error: #d12c2c;
 
 $forms-border: 1px solid $color-secondary-3;
+$forms-border-focused: 1px solid $color-secondary-2;
 
 $font-title: 3rem 'Poppins', sans-serif;
 $font-subtitle: 1.5rem 'Nunito', sans-serif;
