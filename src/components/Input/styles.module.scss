@@ -8,15 +8,18 @@
     border-radius: 30px;
     border: $forms-border;
     box-shadow: 0px 10px 30px rgba(9, 10, 17, 0.05);
-  }  
+    transition: 0.2s border;
+    &:focus {
+      border: $forms-border-focused;
+    }
+  }
   label {
     font: $font-label;
     font-weight: 700;
-  }  
+  }
   .error {
     font: $font-text;
     color: $color-error;
     margin-top: .625rem;
   }
-}  
-
+}

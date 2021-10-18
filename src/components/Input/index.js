@@ -1,6 +1,9 @@
 import styles from "./styles.module.scss"
 
-export const Input = ({ label, name, placeholder, value, onChange, onBlur, error }) => {
+export const Input = ({ label, name, placeholder, value, onChange, onBlur, error, isPassword, isEmail }) => {
+  let type
+  if(isPassword) type = "password"
+  if(isEmail) type = "email"
   return (
     <>
       <div className={`${styles.inputBlock} flex column`}>
@@ -12,12 +15,12 @@ export const Input = ({ label, name, placeholder, value, onChange, onBlur, error
         <input
           id={name}
           placeholder={placeholder}
-          type="text"
+          type={type ? type : "text"}
           onChange={onChange}
           onBlur={onBlur}
           value={value}
         />
-      {error && <p data-anime="bottomTopTop" className={`${styles.error} animate`}>{error}</p>}
+      {error && <p data-anime="leftToRight" className={`error`}>{error}</p>}
       </div>
     </>
   )
