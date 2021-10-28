@@ -1,0 +1,15 @@
+@import '../../../styles/config/variables';
+
+.arrowBox {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09);
+  border-radius: .9375rem;
+  margin-right: 2.5rem;
+  height: fit-content;
+  padding: .625rem;
+  svg {
+    margin-bottom: -0.25rem;
+  }
+  a:active {
+    color: $color-primary-4;
+  }
+}

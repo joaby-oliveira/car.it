@@ -6,7 +6,7 @@ import { FiSearch } from 'react-icons/fi'
 // Import styles
 import styles from "./styles.module.scss"
 
-export const Button = ({ href, children, form, secondary, fillParent, facebook, google, spacer, searchCar }) => {
+export const Button = ({ href, children, form, secondary, fillParent, facebook, google, spacer, onClick, searchCar }) => {
   if (searchCar) {
     return (
       <div className={` 
@@ -29,13 +29,14 @@ export const Button = ({ href, children, form, secondary, fillParent, facebook, 
 
   return (
     <Link href={href}>
-      <a className={` 
-        ${styles.button} flex crossCenter mainCenter 
-        ${secondary ? styles.buttonSecondary : ''} 
-        ${fillParent ? styles.fillParent : ''} 
-        ${facebook ? styles.facebook : ''}
-        ${google ? styles.google : ''}
-        ${spacer ? styles.spacer : ''}
+      <a
+        className={` 
+          ${styles.button} flex crossCenter mainCenter 
+          ${secondary ? styles.buttonSecondary : ''} 
+          ${fillParent ? styles.fillParent : ''} 
+          ${facebook ? styles.facebook : ''}
+          ${google ? styles.google : ''}
+          ${spacer ? styles.spacer : ''}
       `}>{children}</a>
     </Link>
   )

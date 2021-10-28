@@ -1,0 +1,20 @@
+@import "../../../styles/config/variables";
+
+.formsLS {
+  color: white;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(162.73deg, #616bd1 0%, #2c3bd1 100%);
+  .logoForms {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+  .formsSubtitle {
+    color: $color-secondary-3;
+    font: $font-subtitle;
+  }
+  p, h1{
+    margin-bottom: 1.25rem;
+  }
+}

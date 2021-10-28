@@ -1,4 +1,4 @@
-const LoginImage = () => {
+const FormsImage = () => {
   return (
 
     <svg width="276" height="305" viewBox="0 0 276 305" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,4 +42,4 @@ const LoginImage = () => {
   )
 }
 
-export default LoginImage;
+export default FormsImage;
