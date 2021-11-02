@@ -12,7 +12,7 @@ const Home = () => {
     <div className={`page`} animationType="leftToRight">
       <Navbar />
       <div className={`${styles.container}`}>
-        <div className={`${styles.profileBar} flex spaceBetween crossCenter`}>
+        <div className={`${styles.profileBar} flex spaceBetween crossCenter spacerAfter`}>
           <ProfilePreview />
           <div className={`${styles.profileActions} flex`}>
             <Link href="/settings">

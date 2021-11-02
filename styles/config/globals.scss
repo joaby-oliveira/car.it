@@ -57,6 +57,21 @@ body {
   background: $color-secondary-3;
 }
 
+.spacerAfter {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    content: '';
+    height: 2px;
+    background: rgba(9, 10, 17, 0.05);
+    margin: 1.25rem auto;
+    bottom: -2px;
+  }
+}
+
 .fullHeight {
   height: 100vh;
 }
