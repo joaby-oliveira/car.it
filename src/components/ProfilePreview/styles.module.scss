@@ -1,0 +1,22 @@
+@import '../../../styles/config/variables';
+
+.userLogo {
+  border-radius: 50%;
+}
+
+.details {
+  margin-left: .625rem;
+
+  .userName {
+    font: 700 1.25rem Poppins, sans-serif;
+    color: $color-primary-1;
+  }
+
+  .userRate {
+    font: 300 1rem Nunito, sans-serif;
+    color: $color-secondary-1;
+    p {
+      margin-right: .625rem;
+    }
+  }
+}
