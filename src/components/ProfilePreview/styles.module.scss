@@ -10,6 +10,10 @@
   .userName {
     font: 700 1.25rem Poppins, sans-serif;
     color: $color-primary-1;
+    transition: 0.2s;
+    &:hover {
+      color: $color-primary-3;
+    }
   }
 
   .userRate {
