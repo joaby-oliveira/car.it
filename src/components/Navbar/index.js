@@ -20,7 +20,7 @@ export const Navbar = ({ landing }) => {
         </Link>
         <div className={`${styles.buttonContainer} flex`}>
           <Button secondary={true} href="/login">Entrar</Button>
-          <Button href="/criar-conta">Criar Conta</Button>
+          <Button href="/register">Criar Conta</Button>
         </div>
       </nav>
     )
