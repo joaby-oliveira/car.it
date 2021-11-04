@@ -75,7 +75,7 @@ const Login = () => {
             <Button fillParent={true} google={true} href="/"> <FaGoogle /> </Button>
             <Button fillParent={true} facebook={true} href="/"> <FaFacebookF /> </Button>
           </div>
-          <h3 className={`${styles.loginText}`}>Não é cadastrado?<a href="/"> Registre-se</a></h3>
+          <h3 className={`${styles.loginText}`}>Não é cadastrado?<a href="/register"> Registre-se</a></h3>
         </Box>
       </div>
     </div>

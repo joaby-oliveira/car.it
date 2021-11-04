@@ -1,0 +1,9 @@
+.container {
+  button {
+    & + p,
+    & + button {
+      margin-top: 1.25rem;
+
+    }
+  }
+}
