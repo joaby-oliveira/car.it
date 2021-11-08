@@ -6,12 +6,14 @@ import Link from 'next/link'
 import { FiSettings, FiBell } from 'react-icons/fi'
 
 import styles from './styles.module.scss'
+import { CarPreview } from '../../components/CarPreview'
+import { Title } from '../../components/Title'
 
 const Home = () => {
   return (
     <div className={`page`} animationType="leftToRight">
       <Navbar />
-      <div className={`${styles.container}`}>
+      <div className={`${styles.container} flex column`}>
         <div className={`${styles.profileBar} flex spaceBetween crossCenter spacerAfter`}>
           <ProfilePreview />
           <div className={`${styles.profileActions} flex`}>
@@ -26,6 +28,12 @@ const Home = () => {
               </a>
             </Link>
           </div>
+        </div>
+        <div className={`${styles.actionsList} flex column`}>
+          <Title small={true}>
+            Talvez goste desses carros
+          </Title>
+          <CarPreview />
         </div>
       </div>
     </div>
