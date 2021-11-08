@@ -15,6 +15,10 @@
     text-align: center;
   }
 
+  &.small {
+    font-size: 1.125rem;
+  }
+
   span {
     color: $color-enphasis-3;
   }

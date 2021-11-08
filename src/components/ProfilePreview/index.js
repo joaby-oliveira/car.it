@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 import rodriguesLogo from '../../../public/rodriguesLogo.jpg'
 import stars from '../../../public/stars.svg'
 
+import { Title } from '../Title'
 
 export const ProfilePreview = () => {
   return (
@@ -14,7 +15,7 @@ export const ProfilePreview = () => {
       <div className={`${styles.details}`}>
         <Link href='/profile'>
           <a>
-            <h1 className={`${styles.userName}`}>Rodrigues Veículos</h1>
+            <Title small={true}>Rodrigues Veículos</Title>
           </a>
         </Link>
         <small className={`${styles.userRate} flex`}>
