@@ -7,15 +7,6 @@
 .details {
   margin-left: .625rem;
 
-  .userName {
-    font: 700 1.25rem Poppins, sans-serif;
-    color: $color-primary-1;
-    transition: 0.2s;
-    &:hover {
-      color: $color-primary-3;
-    }
-  }
-
   .userRate {
     font: 300 1rem Nunito, sans-serif;
     color: $color-secondary-1;
