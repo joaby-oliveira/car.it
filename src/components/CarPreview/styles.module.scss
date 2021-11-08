@@ -1,0 +1,67 @@
+@import '../../../styles/config/variables';
+
+.carPreview {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0px 4px 70px rgba(36, 39, 66, 0.1);
+  background: #fff;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+  position: relative;
+  .carImageContainer {
+    position: relative;
+    .carImage {
+      object-fit: cover;
+      border-radius: 1.25rem 1.25rem 0 0;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      height: calc(100% - 3px);
+      width: 100%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .4) 0%,
+        rgba(0, 0, 0, 0.1) 10%
+      );
+
+      mix-blend-mode: multiply;
+    }
+  }
+  .carDetails {
+    padding: 1.25rem;
+    width: 90%;
+    flex: 1;
+    .price {
+      font: 700 1.25rem Poppins, sans-serif;
+      color: $color-enphasis-3;
+      margin-top: .625rem;
+    }
+    .description {
+      flex: 1;
+      .seller {
+        position: absolute;
+        bottom: 1.375rem;
+        right: 1.25rem;
+
+        font: 500 .875rem Poppins, sans-serif;
+        color: $color-secondary-2;
+      }
+      .favorite {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        color: $color-favorite;
+        z-index: 100;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 60px rgba(38, 39, 54, 0.2);
+  }
+}
