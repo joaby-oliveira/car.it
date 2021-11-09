@@ -5,7 +5,7 @@
   max-width: 1200px;
   margin: 0 auto;
   .buttonContainer {
-    & + a {
+    a + a {
       margin-left: 1.25rem;
     }
   }
