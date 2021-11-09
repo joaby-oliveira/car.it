@@ -29,7 +29,25 @@
       }
     }
   }
-  .actionsList {
+  .actionsListContainer {
+    margin-bottom: 2.5rem;
+    .actionsList {
+      overflow-x: scroll;
+      padding: 1.25rem;
+      &::-webkit-scrollbar {
+        height: .625rem;
+      }
+      &::-webkit-scrollbar-track {
+        background: #fff;
+        box-shadow: 0 0 40px rgba(9, 10, 17, 0.08);
+        border-radius: 1.25rem;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $color-secondary-2;
+        border-radius: 1.25rem;
+        cursor: pointer !important;
+      }
+    }
     & >  {
       h2 {
         margin-bottom: 20px;

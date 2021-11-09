@@ -8,6 +8,7 @@ import { FiSettings, FiBell } from 'react-icons/fi'
 import styles from './styles.module.scss'
 import { CarPreview } from '../../components/CarPreview'
 import { Title } from '../../components/Title'
+import { ActionButton } from '../../components/ActionButton'
 
 const Home = () => {
   return (
@@ -29,11 +30,27 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className={`${styles.actionsList} flex column`}>
+        <div className={`${styles.actionsListContainer} flex column`}>
+          <Title small={true}>
+            Sugestões para você
+          </Title>
+          <div className={`${styles.actionsList} flex`}>
+            <ActionButton fipe={true}/>
+            <ActionButton fipe={true}/>
+            <ActionButton fipe={true}/>
+            <ActionButton fipe={true}/>
+            <ActionButton fipe={true}/>
+          </div>
+        </div>
+        <div className={`${styles.actionsListContainer} flex column`}>
           <Title small={true}>
             Talvez goste desses carros
           </Title>
-          <CarPreview />
+          <div className={`${styles.actionsList}`}>
+            <div className="actionsList">
+              <CarPreview />
+            </div>
+          </div>
         </div>
       </div>
     </div>
