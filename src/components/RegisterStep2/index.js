@@ -1,3 +1,6 @@
+// Import Next.js 
+import Link from 'next/link'
+
 // Import components
 import { Input } from '../../components/Input';
 
@@ -17,12 +20,13 @@ export const RegisterStep2 = (props) => {
       <Input label="Email" name="email" {...email} placeholder="Ex: email@hotmail.com" />
       <Input label="Senha" name="password" {...password} placeholder="No mínimo 8 dígitos" />
       <Input label="Confirmar Senha" name="confirmPassword" {...confirmPassword} placeholder="Deve ser igual à anterior" />
+      
+      <div className={`flex`}>
+        <Button secondary={true} stepButton={true} onClick={props.prev}>Voltar etapa</Button>
+        <Button href="/login" >Finalizar</Button>
+      </div>
 
-      <Button secondary={true} stepButton={true} onClick={props.prev}>Voltar etapa</Button>
-
-      <Button stepButton={true} onClick={props.next}>Finalizar</Button>
-
-      <Text center={true} >Ao criar uma conta, estará concordando com nossos termos e condições.</Text>
+      <Text center={true} >Ao criar uma conta, estará concordando com nossos <Link href="/">termos e condições.</Link></Text>
     </div>
   )
 }
