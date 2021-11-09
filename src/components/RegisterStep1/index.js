@@ -14,8 +14,7 @@ export const RegisterStep1 = (props) => {
       <Input label="Nome" name="name" {...name} placeholder="Apenas o primeiro nome" />
       <Input label="Sobrenome" name="lastname" {...lastname} placeholder="Sobrenome completo" />
       <Input label="Celular" name="cellphone" {...cellphone} placeholder="Somente números" />
-      <button onClick={props.next}>Próxima Etapa</button>
-      {/* <Button fillParent={true} spacer={true} onClick={props.next} >Próxima etapa</Button> */}
+      <Button stepButton={true} onClick={props.next}>Próxima etapa</Button>
     </>
   )
 }
