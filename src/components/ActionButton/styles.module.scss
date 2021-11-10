@@ -1,32 +1,40 @@
 @import '../../../styles//config/variables';
 
-.actionButton {
-  min-width: 12.5rem;
-  height: 12.5rem;
-  border-radius: 2.5rem;
-  padding: 1.25rem;
+.actionButtonContainer {
+  max-width: 12.5rem;
   margin: .625rem;
-  &.garage {
-    background: linear-gradient(135deg, #f0f0f0 0%, #adb3eb 100%);
-  }
-  &.fipe {
-    background: linear-gradient(135deg, #616bd1 0%, #2c3bd1 100%);
-  }
-  .imageContainer {
-    flex: 1;
-    margin-bottom: 1.25rem;
-  }
-  .cta {
-    width: 100%;
-    font: 700 1rem Poppins, sans-serif;
-    padding: .625rem 0;
-    background: linear-gradient(135deg, #fff 0%, #fff 100%);
-    font-weight: 700;
-    color: $color-primary-2;
+  .actionButton {
+    min-width: 12.5rem;
+    height: 12.5rem;
     border-radius: 2.5rem;
-    transition: 0.2s;
-    &:hover {
-      color: $color-enphasis-3 !important;
+    padding: 1.25rem;
+    &.garage {
+      background: linear-gradient(135deg, #f0f0f0 0%, #adb3eb 100%);
     }
+    &.fipe {
+      background: linear-gradient(135deg, #616bd1 0%, #2c3bd1 100%);
+    }
+    .imageContainer {
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+    .cta {
+      width: 100%;
+      font: 700 1rem Poppins, sans-serif;
+      padding: .625rem 0;
+      background: linear-gradient(135deg, #fff 0%, #fff 100%);
+      font-weight: 700;
+      color: $color-primary-2;
+      border-radius: 2.5rem;
+      transition: 0.2s;
+      &:hover {
+        color: $color-enphasis-3 !important;
+      }
+    }
+  }
+  .description {
+    margin-top: .625rem;
+    color: $color-secondary-1;
+    font: 500 14px Nunito, sans-serif;
   }
 }
