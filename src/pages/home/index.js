@@ -27,32 +27,32 @@ const Home = () => {
     slidesToShow: 1,
     variableWidth: true,
     swipeToSlide: true,
-    responsive: [
-      {
-        breakpoint: 1365,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 1365,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
 
   }
 
@@ -82,11 +82,8 @@ const Home = () => {
 
           <Slider {...configs}>
             <ActionButton fipe={true} />
-            <ActionButton fipe={true} />
-            <ActionButton fipe={true} />
-            <ActionButton fipe={true} />
+            <ActionButton garage={true} />
           </Slider>
-
         </div>
         <div className={`${styles.actionsListContainer} flex column`}>
           <Title small={true}>
