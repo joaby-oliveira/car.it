@@ -6,6 +6,9 @@
   border-radius: 2.5rem;
   padding: 1.25rem;
   margin: .625rem;
+  &.garage {
+    background: linear-gradient(135deg, #f0f0f0 0%, #adb3eb 100%);
+  }
   &.fipe {
     background: linear-gradient(135deg, #616bd1 0%, #2c3bd1 100%);
   }

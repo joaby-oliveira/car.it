@@ -1,18 +1,31 @@
+import Link from 'next/link';
+
 import Image from 'next/dist/client/image'
 
 import styles from './styles.module.scss'
 import fipeIlustration from '../../../public/fipeIlustration.svg'
+import garageIlustration from '../../../public/garageIlustration.svg'
 
-export const ActionButton = (fipe) => {
-  console.log(fipe)
+export const ActionButton = ({fipe, garage}) => {
   return (
-    <div className={`${styles.actionButton} ${fipe ? styles.fipe : ''} flex column crossCenter spaceBetween`}>
+    <div className={`${styles.actionButton} ${fipe ? styles.fipe : ''} ${garage ? styles.garage : ''} flex column crossCenter spaceBetween`}>
       <div className={`${styles.imageContainer} flex crossCenter`}>
-        <Image src={fipeIlustration} />
+        <Image src={fipe ? fipeIlustration : '' || garage ? garageIlustration : ''} />
       </div>
-      <button className={`${styles.cta}`}>
-        FIPE
-      </button>
+      <Link href='/fipe'>
+        <a className={`${styles.cta} flex mainCenter crossCenter`}>
+          {fipe && (
+            <>
+              FIPE
+            </>
+          )}
+          {garage && (
+            <>
+              Garagem
+            </>
+          )}
+        </a>
+      </Link>
     </div>
   )
 }
