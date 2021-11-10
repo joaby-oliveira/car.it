@@ -5,14 +5,7 @@
   height: 12.5rem;
   border-radius: 2.5rem;
   padding: 1.25rem;
-  box-shadow: 0rem 1.25rem 1.1875rem rgba(9, 10, 17, 0.1);
-  & + .actionButton {
-    margin-left: 1.25rem;
-  }
-
-  &:hover {
-    box-shadow: 0px 8px 1.1875rem rgba(9, 10, 17, 0.3);
-  }
+  margin: .625rem;
   &.fipe {
     background: linear-gradient(135deg, #616bd1 0%, #2c3bd1 100%);
   }
@@ -28,9 +21,9 @@
     font-weight: 700;
     color: $color-primary-2;
     border-radius: 2.5rem;
-    transition: 2s;
+    transition: 0.2s;
     &:hover {
-      background: linear-gradient(135deg, #fff 20%, $color-secondary-2 100%);
+      color: $color-enphasis-3 !important;
     }
   }
 }
