@@ -85,6 +85,7 @@ const Home = () => {
             <ActionButton garage={true} />
           </Slider>
         </div>
+        <hr />
         <div className={`${styles.actionsListContainer} flex column`}>
           <Title small={true}>
             Categorias
@@ -98,6 +99,7 @@ const Home = () => {
             <CarCategory category='pickup' />
           </Slider>
         </div>
+        <hr />
         <div className={`${styles.actionsListContainer} flex column`}>
           <Title small={true}>
             Talvez goste desses carros

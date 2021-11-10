@@ -30,11 +30,15 @@
     }
   }
   .actionsListContainer {
-    margin-bottom: 2.5rem;
+    margin: 1.25rem 0;
     & >  {
       h2 {
         margin-bottom: 20px;
       }
     }
+  }
+  hr {
+    border: 1px solid $color-primary-1;
+    opacity: .08;
   }
 }
