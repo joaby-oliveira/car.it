@@ -4,11 +4,11 @@
   width: 300px;
   height: 400px;
   overflow: hidden;
-  box-shadow: 0px 4px 70px rgba(36, 39, 66, 0.1);
   background: #fff;
   border-radius: 1.25rem;
   transition: 0.2s;
   position: relative;
+  margin: .625rem;
   .carImageContainer {
     position: relative;
     .carImage {
@@ -33,9 +33,44 @@
       mix-blend-mode: multiply;
     }
   }
+  position: relative;
+  transition: 0.2s;
+  &:hover {
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+
+      mix-blend-mode: multiply;
+    }
+    .carDetails .more {
+      display: flex;
+      transition: 0.2s;
+    }
+  }
   .carDetails {
     padding: 1.25rem;
     width: 90%;
+    .more {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 0 1.25rem;
+      margin-bottom: 1.25rem;
+      z-index: 10;
+      display: none;
+    }
     flex: 1;
     .price {
       font: 700 1.25rem Poppins, sans-serif;
@@ -60,8 +95,5 @@
         z-index: 100;
       }
     }
-  }
-  &:hover {
-    box-shadow: 0px 0px 60px rgba(38, 39, 54, 0.2);
   }
 }
