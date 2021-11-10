@@ -17,11 +17,12 @@ import styles from './styles.module.scss'
 import { CarPreview } from '../../components/CarPreview'
 import { Title } from '../../components/Title'
 import { ActionButton } from '../../components/ActionButton'
+import { CarCategory } from '../../components/CarCategory'
 
 const Home = () => {
   const configs = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: false,
     slidesToShow: 1,
     variableWidth: true,
@@ -86,6 +87,19 @@ const Home = () => {
             <ActionButton fipe={true} />
           </Slider>
 
+        </div>
+        <div className={`${styles.actionsListContainer} flex column`}>
+          <Title small={true}>
+            Categorias
+          </Title>
+          <Slider {...configs}>
+            <CarCategory category='suv' />
+            <CarCategory category='convertible' />
+            <CarCategory category='coupe' />
+            <CarCategory category='hatch' />
+            <CarCategory category='sedan' />
+            <CarCategory category='pickup' />
+          </Slider>
         </div>
         <div className={`${styles.actionsListContainer} flex column`}>
           <Title small={true}>
