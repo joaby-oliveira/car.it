@@ -1,9 +1,14 @@
 .container {
-  button {
-    & + p,
-    & + button {
-      margin-top: 1.25rem;
+  & > p {
+   margin-top: 1.25rem
+  }
 
+  button {
+    &:nth-child(1){
+      margin-right: .625rem;
+    }
+    &:nth-child(2){
+      margin-left: .625rem;
     }
   }
 }
