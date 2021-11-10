@@ -1,0 +1,15 @@
+@import '../../../styles/config/variables';
+
+.categoryContainer {
+  padding: .625rem;
+  border-radius: 1.25rem;
+  min-width: 5.625rem;
+  height: 5.625rem;
+  background: #fff;
+  margin: .625rem;
+  .categoryName {
+    font: 700 1rem Poppins, sans-serif;
+    color: $color-primary-1;
+    margin-bottom: .625rem;
+  }
+}
