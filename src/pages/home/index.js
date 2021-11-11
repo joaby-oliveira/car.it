@@ -1,5 +1,6 @@
 import { Navbar } from '../../components/Navbar'
 import { ProfilePreview } from '../../components/ProfilePreview'
+import Head from 'next/head'
 
 import Link from 'next/link'
 
@@ -58,6 +59,11 @@ const Home = () => {
 
   return (
     <div className={`page flex`} animationType="leftToRight">
+      <Head>
+        <title>Car.it | Página inicial</title>
+        <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <div className={`${styles.container} flex column`}>
         <div className={`${styles.profileBar} flex spaceBetween crossCenter spacerAfter`}>
