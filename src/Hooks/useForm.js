@@ -33,9 +33,6 @@ export const useForm = (type) => {
     setValue(targetValue)
   }
 
-  console.log(value)
-  
-
   return {
     value,
     setValue,

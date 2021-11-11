@@ -27,7 +27,6 @@ const Login = () => {
   const [loginErrorMessage, setLoginErrorMessage] = useState('')
 
   async function auth(e) {
-    console.log(email.value)
     e.preventDefault()
     const result = await fetch('http://localhost:8080/user/login', {
       method: 'POST',
