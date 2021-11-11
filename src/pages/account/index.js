@@ -3,29 +3,35 @@ import { ProfilePreview } from '../../components/ProfilePreview'
 import { Box } from '../../components/Box'
 import { Title } from '../../components/Title'
 import { Text } from '../../components/Text'
+import Head from 'next/head'
 
 import Link from 'next/link'
 
-import { FiUser, FiSettings, FiHeart, FiBell, FiMoon, FiLogOut } from 'react-icons/fi'
+import { FiUser, FiSettings, FiHeart, FiBell, FiLogOut } from 'react-icons/fi'
 import { AiOutlineCar } from 'react-icons/ai'
 import { WiMoonAltThirdQuarter } from 'react-icons/wi'
 
 import styles from './styles.module.scss'
 import { Button } from '../../components/Button'
 
-const Profile = () => {
+const Account = () => {
   return (
-    <div className={`${styles.profile} page`} animationType="leftToRight">
+    <div className={`${styles.account} page flex `} animationType="leftToRight">
+      <Head>
+        <title>Car.it | Conta</title>
+        <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <div className={`${styles.container} flex column`}>
-        <div className={`${styles.profileBar} flex spaceBetween crossCenter`}>
+        <div className={`${styles.accountBar} flex spaceBetween crossCenter`}>
           <ProfilePreview isProfilePage={true} />
         </div>
         <div className={`${styles.boxContainer}`}>
           <Box>
             <ul className={`${styles.linkList}`}>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <FiUser size={28} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -36,7 +42,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <AiOutlineCar size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -46,7 +52,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <FiSettings size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -57,7 +63,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <FiHeart size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -67,7 +73,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <FiBell size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -77,7 +83,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/profile">
+                <Link href="/account">
                   <a className={`flex crossCenter`}>
                     <FiLogOut size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -96,4 +102,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default Account

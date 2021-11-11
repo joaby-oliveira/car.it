@@ -9,7 +9,7 @@
   min-width: 45rem;
 }
 
-.profile {
+.account {
   min-height: 100vh;
 }
 
@@ -17,7 +17,7 @@
   margin-left: .625rem;
 }
 
-.profileBar {
+.accountBar {
   min-width: 45rem;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
@@ -29,6 +29,9 @@
     transition: 0.2s transform;
     &:hover {
       transform: translateX(1.25rem);
+      svg, h2 {
+        color: $color-enphasis-3;
+      }
     }
     &::after {
       margin: 1.25rem 0;
