@@ -63,6 +63,27 @@
         background: $focus-facebook;
       }
     }
+
+  }
+
+  
+  &.dark {
+    background-color: $color-primary-2;
+    box-shadow: 0px 10px 30px rgba(36, 39, 66, 0.25);
+    svg {
+      margin-right: .625rem;
+    }
+    &:hover {
+      background: $hover-dark;
+    }
+
+    &:active {
+      background: $active-dark;
+    }
+
+    &:focus {
+      background: $focus-dark;
+    }
   }
 
   &.buttonSecondary {

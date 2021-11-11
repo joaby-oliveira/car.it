@@ -1,0 +1,46 @@
+@import '../../../styles/config/variables';
+
+.container {
+  width: 100%;
+  align-items: center;
+}
+
+.boxContainer {
+  min-width: 45rem;
+}
+
+.profile {
+  min-height: 100vh;
+}
+
+.textContainer {
+  margin-left: .625rem;
+}
+
+.profileBar {
+  min-width: 45rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.linkList {
+  width: 100%;
+  & > li {
+    transition: 0.2s transform;
+    &:hover {
+      transform: translateX(1.25rem);
+    }
+    &::after {
+      margin: 1.25rem 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: .0625rem;
+      background-color: $color-primary-1;
+      opacity: 0.1;
+    }
+    svg {
+      color: $color-primary-2;
+    }
+  }
+}

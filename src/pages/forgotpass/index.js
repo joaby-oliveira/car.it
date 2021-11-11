@@ -11,7 +11,7 @@ import { Steps, Step } from "react-step-builder";
 // Import styles 
 import styles from './styles.module.scss';
 
-const forgotpass = () => {
+const forgotPass = () => {
   return (
     <div className={`${styles.registerContainer} flex crossCenter mainCenter fullHeight`}>
       <Head>
@@ -43,4 +43,4 @@ const forgotpass = () => {
   )
 }
 
-export default forgotpass
+export default forgotPass
