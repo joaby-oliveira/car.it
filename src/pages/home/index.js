@@ -57,7 +57,7 @@ const Home = () => {
   }
 
   return (
-    <div className={`page`} animationType="leftToRight">
+    <div className={`page flex`} animationType="leftToRight">
       <Navbar />
       <div className={`${styles.container} flex column`}>
         <div className={`${styles.profileBar} flex spaceBetween crossCenter spacerAfter`}>
