@@ -12,21 +12,42 @@
 }
 
 .navbar {
-  background: #393D60;
-  width: 100%;
+  background: linear-gradient(176.65deg, #090a11 0%, #393d60 100%);
   padding: .625rem 1.25rem;
+  height: 100vh;
+  max-width: 16.75rem;
+  position: sticky;
+  top: 0;
   & > svg {
     height: 3.125rem;
+    margin: 2.5rem 0;
   }
   .icons {
     color: #fff;
   }
-  .navItem {
-    & + .navItem {
-      margin-left: 1.25rem;
-    } 
-    p {
-      margin-left: .3125rem;
+  ul {
+    &,
+    a,
+    .navItem {
+      width: 100%;
+    }
+    .navItem {
+      border-radius: 1.25rem;
+      transition: 0.2s;
+      a {
+        padding: .625rem;
+      }
+      & + .navItem {
+        margin-top: .625rem;
+      }
+      p {
+        color: #e6e7f4;
+        margin-left: .3125rem;
+      }
+      &:hover {
+        width: 100%;
+        background: #090a11;
+      }
     }
   }
 }

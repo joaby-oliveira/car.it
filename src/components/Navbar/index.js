@@ -26,9 +26,9 @@ export const Navbar = ({ landing }) => {
     )
   }
   return (
-    <nav className={`${styles.navbar} flex spaceBetween crossCenter`}>
+    <nav className={`${styles.navbar} flex column crossCenter`}>
       <Logo white={true} />
-      <ul className={`flex`}>
+      <ul className={`flex column crossStart`}>
         <li className={`${styles.navItem}`}>
           <Link href="/home">
             <a className={`flex crossCenter`}>
@@ -66,7 +66,7 @@ export const Navbar = ({ landing }) => {
         </li>
       </ul>
 
-      <Button searchCar={true}>asd</Button>
+      <Button searchCar={true} />
     </nav>
   )
 }
