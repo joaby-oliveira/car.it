@@ -9,10 +9,9 @@ import styles from "./styles.module.scss"
 export const Button = ({ href, children, form, secondary, fillParent, facebook, google, spacer, onClick, stepButton, searchCar }) => {
   if (searchCar) {
     return (
-      <div className={` 
-      ${styles.button} flex crossCenter mainCenter 
-      ${styles.searchButton}
-    `}><FiSearch />Achar carros</div>
+      <button className={`${styles.button} ${styles.searchButton} flex crossCenter mainCenter `}>
+        Procurar Carros
+      </button>
     )
   }
 
