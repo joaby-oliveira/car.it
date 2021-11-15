@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import { Box } from '../../components/Box'
 import { ProfilePreview } from '../../components/ProfilePreview'
 import { Navbar } from '../../components/Navbar'
+import { ProfilDetailItem } from '../../components/ProfileDetailItem'
 
 
 const Profile = () => {
@@ -10,7 +11,10 @@ const Profile = () => {
       <Navbar />
       <div className={`${styles.boxContainer} flex`}>
         <Box>
-          <ProfilePreview className={`spacerAfter`}/>
+          <ProfilePreview className={`spacerAfter`} />
+          <ProfilDetailItem className={`spacerAfter`} dataName='name' />
+          <ProfilDetailItem className={`spacerAfter`} dataName='cellphone' />
+          <ProfilDetailItem dataName='password' />
         </Box>
       </div>
     </main>
