@@ -13,7 +13,7 @@ export const ProfilePreview = ({isProfilePage, className}) => {
     <div className={`${className} ${styles.previewContainer} ${isProfilePage ? styles.profile : ''} flex`}>
       <Image className={`${styles.userLogo}`} src={rodriguesLogo} />
       <div className={`${styles.details}`}>
-        <Link href='/profile'>
+        <Link href='/account'>
           <a>
             <Title small={true}>Rodrigues Veículos</Title>
           </a>
