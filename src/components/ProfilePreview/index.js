@@ -8,9 +8,9 @@ import stars from '../../../public/stars.svg'
 
 import { Title } from '../Title'
 
-export const ProfilePreview = ({isProfilePage}) => {
+export const ProfilePreview = ({isProfilePage, className}) => {
   return (
-    <div className={`${styles.previewContainer} ${isProfilePage ? styles.profile : ''} flex`}>
+    <div className={`${className} ${styles.previewContainer} ${isProfilePage ? styles.profile : ''} flex`}>
       <Image className={`${styles.userLogo}`} src={rodriguesLogo} />
       <div className={`${styles.details}`}>
         <Link href='/profile'>
