@@ -25,7 +25,7 @@ const Register = () => {
 
         <ArrowBox href="/" />
 
-        <Box>
+        <Box padding="big">
           <form className={`forms`}>
             <Steps>
               <Step component={RegisterStep1}/>

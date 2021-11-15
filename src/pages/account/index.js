@@ -28,10 +28,10 @@ const Account = () => {
           <ProfilePreview isProfilePage={true} />
         </div>
         <div className={`${styles.boxContainer}`}>
-          <Box>
+          <Box padding="big">
             <ul className={`${styles.linkList}`}>
               <li>
-                <Link href="/account">
+                <Link href="/profile">
                   <a className={`flex crossCenter`}>
                     <FiUser size={28} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>

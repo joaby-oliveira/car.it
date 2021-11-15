@@ -60,7 +60,7 @@ const Login = () => {
       <div animationType="rightToLeft" className={`formsRS flex mainCenter`}>
 
         <ArrowBox href="/" />
-        <Box>
+        <Box padding="big">
 
           <form onSubmit={auth} className={`${styles.formsLogin}`}>
             <Input isEmail={true} label="Email" name="email" {...email} placeholder="Ex.: email@dominio.com" />
