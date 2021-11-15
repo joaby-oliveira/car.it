@@ -29,7 +29,8 @@
     transition: 0.2s transform;
     &:hover {
       transform: translateX(1.25rem);
-      svg, h2 {
+      svg,
+      h2 {
         color: $color-enphasis-3;
       }
     }
