@@ -4,12 +4,21 @@ import { Button } from '../../components/Button';
 
 // Import styles 
 import { useForm } from '../../Hooks/useForm';
+import { RegisterContext } from '../../pages/register/RegisterContext';
+import { useContext } from 'react';
 
 export const RegisterStep1 = (props) => {
   const name = useForm('name');
   const lastname = useForm('lastname');
   const cellphone = useForm('cellphone');
   const cpf = useForm('cpf');
+  const registerData = useContext(RegisterContext)
+  
+  registerData.name.setName(name)
+  registerData.lastname.setLastname(lastname)
+  registerData.cellphone.setCellphone(cellphone)
+  registerData.cpf.setCpf(cpf)
+  
   return (
     <>
       <Input label="Nome" name="name" {...name} placeholder="Apenas o primeiro nome" />

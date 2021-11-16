@@ -9,12 +9,16 @@ import { useForm } from '../../Hooks/useForm';
 import { Button } from '../../components/Button';
 import { Text } from '../../components/Text';
 import styles from "./styles.module.scss"
+import { useContext } from 'react';
+import { RegisterContext } from '../../pages/register/RegisterContext';
 
 
 export const RegisterStep2 = (props) => {
   const email = useForm('email');
   const password = useForm('password');
   const confirmPassword = useForm('confirmPassword');
+  const registerData = useContext(RegisterContext)
+
   return (
     <div className={`${styles.container}`}>
       <Input label="Email" name="email" {...email} placeholder="Ex: email@hotmail.com" />

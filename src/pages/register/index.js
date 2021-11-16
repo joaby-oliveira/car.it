@@ -9,8 +9,14 @@ import { Steps, Step } from "react-step-builder";
 
 // Import styles 
 import styles from './styles.module.scss';
+import { RegisterContext } from './RegisterContext';
+import { useContext } from 'react';
 
 const Register = () => {
+
+  const registerData = useContext(RegisterContext)
+  registerData.cpf.setCpf('00000000000')
+  
   return (
     <div className={`${styles.registerContainer} flex crossCenter mainCenter fullHeight`}>
       <Head>
@@ -20,7 +26,6 @@ const Register = () => {
       </Head>
 
       <FormsLS title="Faça sua conta" subtitle="Comece sua jornada em busca do carro perfeito!" />
-      
       <div animationType="rightToLeft" className={`formsRS flex mainCenter`}>
 
         <ArrowBox href="/" />
@@ -28,15 +33,12 @@ const Register = () => {
         <Box padding="big">
           <form className={`forms`}>
             <Steps>
-              <Step component={RegisterStep1}/>
-              <Step component={RegisterStep2}/>
+              <Step component={RegisterStep1} />
+              <Step component={RegisterStep2} />
             </Steps>
           </form>
         </Box>
-
       </div>
-
-
     </div>
   )
 }
