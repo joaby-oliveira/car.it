@@ -1,0 +1,15 @@
+@import '../../../styles/config/variables';
+
+.container {
+  & > p {
+    margin-top: 1.25rem;
+    .termsAndConditions {
+      font-weight: 700;
+      color: $color-enphasis-3;
+      transition: 0.2s;
+      &:hover {
+        color: $color-enphasis-6;
+      }
+    }
+  }
+}
