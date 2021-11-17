@@ -1,6 +1,6 @@
 // Left to right animation
 [animationType="leftToRight"] {
-  transform: translate3d(-10rem, 0, 0);
+  transform: translate3d(-1rem, 0, 0);
   animation: leftToRight forwards .4s;
 }
 
@@ -14,8 +14,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-
 
 // Right to left animation
 [animationType="rightToLeft"] {

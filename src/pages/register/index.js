@@ -5,6 +5,7 @@ import { FormsLS } from "../../components/FormsLS";
 import { ArrowBox } from "../../components/ArrowBox";
 import { RegisterStep1 } from '../../components/RegisterStep1';
 import { RegisterStep2 } from '../../components/RegisterStep2';
+import { RegisterStep3 } from '../../components/RegisterStep3';
 import { Steps, Step } from "react-step-builder";
 
 // Import styles 
@@ -15,7 +16,7 @@ import { useContext } from 'react';
 const Register = () => {
 
   const registerData = useContext(RegisterContext)
-  registerData.cpf.setCpf('00000000000')
+  console.log(registerData.cpfCnpj.value)
   
   return (
     <div className={`${styles.registerContainer} flex crossCenter mainCenter fullHeight`}>
@@ -34,7 +35,8 @@ const Register = () => {
           <form className={`forms`}>
             <Steps>
               <Step component={RegisterStep1} />
-              <Step component={RegisterStep2} />
+              {/* <Step component={RegisterStep2} /> */}
+              <Step component={RegisterStep3} />
             </Steps>
           </form>
         </Box>
