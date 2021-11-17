@@ -1,13 +1,29 @@
+@import '../../../styles/config/variables';
+
 .container {
+  max-height: 25rem;
+  overflow-y: scroll;
+
+  box-sizing: content-box;
+  padding-right: .625rem;
+
+  &::-webkit-scrollbar {
+    width: .25rem;
+    background: $color-secondary-3;
+    margin-left: .625rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-secondary-1;
+  }
   & > p {
-   margin-top: 1.25rem
+    margin-top: 1.25rem;
   }
 
   button {
-    &:nth-child(1){
+    &:nth-child(1) {
       margin-right: .625rem;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: .625rem;
     }
   }
