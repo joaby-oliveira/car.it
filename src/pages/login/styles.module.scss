@@ -54,30 +54,6 @@
   }
 }
 
-.loginLS {
-  color: white;
-  height: 100%;
-  width: 50%;
-  background: linear-gradient(162.73deg, #616bd1 0%, #2c3bd1 100%);
-  .logoLogin {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-  }
-  p,
-  h1 {
-    margin-bottom: 1.25rem;
-  }
-}
-
-.loginRS {
-  width: 50%;
-  padding: 0 5rem 0 2.5rem;
-  .logoLogin {
-    display: none;
-  }
-}
-
 .formsLogin {
   width: 100%;
 }
