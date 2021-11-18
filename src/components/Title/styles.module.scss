@@ -19,6 +19,11 @@
     font-size: 1.125rem;
   }
 
+  &.medium {
+    font-size: 2.25rem;
+    max-width: 480px;
+  }
+
   span {
     color: $color-enphasis-3;
   }
