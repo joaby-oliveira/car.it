@@ -16,14 +16,14 @@ import { Button } from '../../components/Button'
 
 const Account = () => {
   return (
-    <div className={`${styles.account} page flex `} animationType="leftToRight">
+    <div className={`${styles.account} page flex `}>
       <Head>
         <title>Car.it | Conta</title>
         <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={`${styles.container} flex column`}>
+      <div animationType="leftToRight" className={`${styles.container} flex column`}>
         <div className={`${styles.accountBar} flex spaceBetween crossCenter`}>
           <ProfilePreview isProfilePage={true} />
         </div>
@@ -42,7 +42,7 @@ const Account = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/account">
+                <Link href="/garage">
                   <a className={`flex crossCenter`}>
                     <AiOutlineCar size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -63,7 +63,7 @@ const Account = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/account">
+                <Link href="/favorites">
                   <a className={`flex crossCenter`}>
                     <FiHeart size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
