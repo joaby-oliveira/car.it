@@ -15,7 +15,7 @@
   background: linear-gradient(176.65deg, #090a11 0%, #393d60 100%);
   padding: .625rem 1.25rem;
   height: 100vh;
-  max-width: 16.75rem;
+  min-width: 16.75rem;
   position: sticky;
   top: 0;
   & > svg {
