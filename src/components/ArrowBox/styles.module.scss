@@ -13,3 +13,9 @@
     color: $color-primary-4;
   }
 }
+
+@media (max-width: $formsBreakSmall) {
+  .arrowBox {
+    display: none;
+  }
+}

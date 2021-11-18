@@ -91,6 +91,13 @@ body {
   padding: 0 5rem 0 2.5rem;
 }
 
+@media (max-width: $formsBreakMedium) {
+  .formsRS {
+    padding: 0;
+    width: auto;
+  }
+}
+
 // Max width
 .maxWidth {
   max-width: 1200px;
