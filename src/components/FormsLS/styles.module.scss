@@ -19,3 +19,9 @@
     margin-bottom: 1.25rem;
   }
 }
+
+@media (max-width: $formsBreakMedium) {
+  .formsLS {
+    display: none;
+  }
+}
