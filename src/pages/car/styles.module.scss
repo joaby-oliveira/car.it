@@ -1,0 +1,80 @@
+@import '../../../styles/config/variables';
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas:
+  'slider information'
+  'slider description'
+  'table additionals';
+  padding: 2.5rem;
+  .carousel {
+    background: $color-primary-3;
+    grid-area: slider;
+    max-width: 37.5rem;
+    margin-right: 1.25rem;
+  }
+  .description {
+    grid-area: description;
+    box-shadow: 0px 4px 30px rgba(9, 10, 17, 0.1);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    p {
+      margin-top: .625rem;
+    }
+  }
+  .rightSide {
+    grid-area: information;
+    position: relative;
+    height: fit-content;
+    .price {
+      color: $color-enphasis-3;
+      font: 700 3rem Poppins, sans-serif;
+    }
+    p {
+      position: absolute;
+      top: 1.25rem;
+      right: 0;
+    }
+    .actionButtonContainer {
+      margin-top: .625rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .actionButton {
+        width: fit-content;
+        padding: 1.25rem;
+        box-shadow: 0px 4px 20px rgba(9, 10, 17, 0.06);
+        border-radius: 1.25rem;
+        cursor: pointer;
+        transition: 0.2s;
+        & + .actionButton {
+          margin-left: .625rem;
+        }
+        &.phone {
+          border: 2px solid $color-enphasis-3;
+          color: $color-enphasis-3;
+          &:hover {
+            background: $color-secondary-3;
+          }
+          &:active {
+            background: $color-secondary-2;
+          }
+        }
+        &.chat {
+          background: $color-enphasis-3;
+          color: #fff;
+          &:hover {
+            background: $color-enphasis-4;
+          }
+          &:active {
+            background: $color-enphasis-6;
+          }
+        }
+      }
+    }
+  }
+}
