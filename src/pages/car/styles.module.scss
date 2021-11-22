@@ -15,7 +15,7 @@
     background: $color-primary-3;
     grid-area: slider;
     max-width: 31rem;
-    margin-right: 1.25rem;
+    margin-right: 2.5rem;
     position: relative;
     border-radius: 1.25rem;
     .dotsContainer {
@@ -49,6 +49,7 @@
     box-shadow: 0px 4px 30px rgba(9, 10, 17, 0.1);
     border-radius: 1.25rem;
     padding: 1.25rem;
+    margin-top: 1.25rem;
     p {
       margin-top: .625rem;
     }
@@ -70,9 +71,8 @@
       right: 0;
     }
     .actionButtonContainer {
-      margin-top: .625rem;
       position: absolute;
-      bottom: 0;
+      bottom: 10px;
       right: 0;
       .actionButton {
         width: fit-content;
