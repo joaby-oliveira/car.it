@@ -99,6 +99,42 @@ const carId = () => {
           </Title>
           <Text>Sem detalhes, 700 de doc, documento em branco. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at metus id purus pellentesque viverra vitae quis nisi. Morbi egestas hendrerit erat eu consectetur. Phasellus auctor sit amet magna in elementum. Vivamus consequat venenatis ligula, vitae scelerisque odio sodales id.</Text>
         </div>
+
+        <div className={styles.specifications}>
+          <Title small={true}>
+            Especificações
+          </Title>
+          <table>
+            <tr>
+              <th>KM</th>
+              <td>67.542</td>
+            </tr>
+            <tr>
+              <th>Ano</th>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <th>Estado</th>
+              <td>Seminovo</td>
+            </tr>
+            <tr>
+              <th>Direção</th>
+              <td>Hidráulica</td>
+            </tr>
+            <tr>
+              <th>Transmissão</th>
+              <td>Automática</td>
+            </tr>
+            <tr>
+              <th>Portas</th>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Combustível</th>
+              <td>Flex</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </main>
   )
