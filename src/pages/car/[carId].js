@@ -24,6 +24,23 @@ import { Text } from '../../components/Text'
 import { Navbar } from '../../components/Navbar'
 
 const carId = () => {
+  function PrevArrow({ onClick }) {
+    return (
+      <svg className={`${styles.arrow} ${styles.prevArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 2L2 25L25 48" stroke="white" stroke-width="4" stroke-linejoin="round" />
+      </svg>
+    )
+  }
+
+  function NextArrow({ onClick }) {
+    return (
+      <svg className={`${styles.arrow} ${styles.nextArrow}`} onClick={onClick} width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L25 25L2 48" stroke="white" stroke-width="4" stroke-linejoin="round" />
+      </svg>
+
+    )
+  }
+  
 
   const carImages = [
     suv,
@@ -41,15 +58,11 @@ const carId = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
     appendDots: dots => (
-      <div
-        style={{
-          borderRadius: "10px",
-          padding: "10px",
-          marginTop: "-20px"
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
+      <div>
+        <ul className={styles.dotsContainer} style={{ margin: "0px" }}> {dots} </ul>
       </div>
     )
   }
@@ -61,7 +74,7 @@ const carId = () => {
     <main className={`flex`}>
       <Navbar />
       <div className={`${styles.container}`}>
-        <Slider className={`${styles.carousel} flex`} {...configs}>
+        <Slider className={`${styles.carousel} flex mainCenter crossCenter`} {...configs}>
           {
             carImages.map((carImage) => {
               return (
@@ -71,7 +84,7 @@ const carId = () => {
           }
         </Slider>
         <div className={`${styles.rightSide} flex column`}>
-          <Title>Chevrolet Onix</Title>
+          <Title medium={true}>Chevrolet Onix ASD Onix Supra</Title>
           <h2 className={`${styles.price}`}>R$42.400</h2>
           <Text>2014 | 67.542 km</Text>
           <div className={`${styles.actionButtonContainer} flex`}>
