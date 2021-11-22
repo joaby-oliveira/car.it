@@ -58,14 +58,14 @@ const Home = () => {
   }
 
   return (
-    <div className={`page flex`} animationType="leftToRight">
+    <div className={`page flex`}>
       <Head>
         <title>Car.it | Página inicial</title>
         <meta name="description" content="Anuncie e compre carros novos e usados na cidade de Marília" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={`${styles.container} flex column`}>
+      <div animationType="leftToRight" className={`${styles.container} flex column`}>
         <div className={`${styles.profileBar} flex spaceBetween crossCenter spacerAfter`}>
           <ProfilePreview />
           <div className={`${styles.profileActions} flex`}>

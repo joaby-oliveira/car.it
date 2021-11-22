@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss"
 
-export const Select = () => {
+export const SelectCondition = () => {
   
   return (
     <>

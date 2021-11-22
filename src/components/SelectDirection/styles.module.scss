@@ -1,0 +1,21 @@
+@import '../../../styles/config/variables';
+
+.label {
+  font: $font-label;
+  font-weight: 700;
+}
+
+.select {
+  margin-bottom: 1.25rem;
+  font: $font-text;
+  padding: .625rem 1.25rem;
+  border-radius: 30px;
+  border: $forms-border;
+  box-shadow: 0px 10px 30px rgba(9, 10, 17, 0.05);
+  transition: 0.2s border;
+  width: 100%;
+
+  option{
+    border: none;
+  }
+}

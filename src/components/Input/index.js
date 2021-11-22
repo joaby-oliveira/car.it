@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss"
 
-export const Input = ({ label, name, placeholder, value, onChange, onBlur, error, isPassword, isEmail }) => {
-  let type
+export const Input = ({ label, name, placeholder, value, onChange, onBlur, error, isPassword, isEmail, type }) => {
   if(isPassword) type = "password"
   if(isEmail) type = "email"
   return (
@@ -15,7 +14,7 @@ export const Input = ({ label, name, placeholder, value, onChange, onBlur, error
         <input
           id={name}
           placeholder={placeholder}
-          type={type ? type : "text"}
+          type={`${type}` ? type : "text"}
           onChange={onChange}
           onBlur={onBlur}
           value={value}

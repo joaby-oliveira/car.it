@@ -4,7 +4,9 @@ import { Box } from '../../components/Box';
 import { FormsLS } from "../../components/FormsLS";
 import { ArrowBox } from "../../components/ArrowBox";
 import { RegisterCarStep1 } from '../../components/RegisterCarStep1';
-import { RegisterStep2 } from '../../components/RegisterStep2';
+import { RegisterCarStep2 } from './../../components/RegisterCarStep2';
+import { RegisterCarStep3 } from './../../components/RegisterCarStep3';
+
 import { Steps, Step } from "react-step-builder";
 
 // Import styles 
@@ -29,14 +31,12 @@ const RegisterCar = () => {
           <form className={`forms`}>
             <Steps>
               <Step component={RegisterCarStep1}/>
-              <Step component={RegisterStep2}/>
+              <Step component={RegisterCarStep2}/>
+              <Step component={RegisterCarStep3}/>
             </Steps>
           </form>
         </Box>
-
       </div>
-
-
     </div>
   )
 }
