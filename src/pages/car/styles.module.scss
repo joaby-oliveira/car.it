@@ -114,17 +114,19 @@
   .rightSide {
     grid-area: information;
     position: relative;
-    height: fit-content;
-    h2 {
-      max-width: 18.75rem;
-    }
-    .carName {
-      font: 400 1.5rem Poppins, sans-serif;
-      color: $color-primary-1;
-    }
-    .price {
-      color: $color-enphasis-3;
-      font: 700 2rem Poppins, sans-serif;
+    .carInfo {
+      min-height: 120px;
+      h2 {
+        max-width: 18.75rem;
+      }
+      .carName {
+        font: 400 1.5rem Poppins, sans-serif;
+        color: $color-primary-1;
+      }
+      .price {
+        color: $color-enphasis-3;
+        font: 700 2rem Poppins, sans-serif;
+      }
     }
     p {
       position: absolute;

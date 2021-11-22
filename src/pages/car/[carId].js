@@ -86,8 +86,10 @@ const carId = () => {
           }
         </Slider>
         <div className={`${styles.rightSide} flex column`}>
-          <h2 className={`${styles.carName}`}>Chevrolet Onix ASD Onix Supra</h2>
-          <h2 className={`${styles.price}`}>R$42.400</h2>
+          <div className={`${styles.carInfo} flex column spaceBetween`}>
+            <h2 className={`${styles.carName}`}>Chevrolet Onix</h2>
+            <h2 className={`${styles.price}`}>R$42.400</h2>
+          </div>
           <Text>2014 | 67.542 km</Text>
           <div className={`${styles.actionButtonContainer} flex`}>
             <span className={`${styles.actionButton} ${styles.phone} flex mainCenter crossCenter `}><FiPhone size={24} /></span>
