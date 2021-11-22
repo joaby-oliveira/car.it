@@ -9,7 +9,7 @@
   grid-template-areas:
   'slider information'
   'slider description'
-  'table additionals';
+  'specifications additionals';
   gap: 2.5rem;
   padding: 2.5rem;
   .carousel {
@@ -45,6 +45,7 @@
     }
   }
   .specifications {
+    grid-area: specifications;
     box-shadow: 0px 4px 30px 0px #090A111A;
     width: 100%;
     border-radius: 1.25rem;
@@ -76,6 +77,30 @@
       }
     }
   }
+  .additionals {
+    h2 {
+      margin-bottom: 1.25rem;
+    }
+    .additionalItem {
+      font: 400 1rem Nunito, sans-serif;
+      margin: 0 .625rem .625rem .625rem;
+      border-radius: .9375rem;
+      padding: .625rem .9375rem;
+      background: $color-green-1;
+      color: $color-green-2;
+      width: fit-content;
+      height: fit-content;
+      border: 2px solid $color-green-1;
+      transition: 0.2s;
+      cursor: default;
+      &:hover {
+        border: 2px solid $color-green-2;
+      }
+      svg {
+        margin-left: .625rem;
+      }
+    }
+  }
   .description {
     grid-area: description;
     box-shadow: 0px 4px 30px rgba(9, 10, 17, 0.1);
@@ -93,13 +118,17 @@
     h2 {
       max-width: 18.75rem;
     }
+    .carName {
+      font: 400 1.5rem Poppins, sans-serif;
+      color: $color-primary-1;
+    }
     .price {
       color: $color-enphasis-3;
-      font: 700 3rem Poppins, sans-serif;
+      font: 700 2rem Poppins, sans-serif;
     }
     p {
       position: absolute;
-      top: 1.25rem;
+      top: 0.3125rem;
       right: 0;
     }
     .actionButtonContainer {

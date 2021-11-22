@@ -12,6 +12,8 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+import { FiCheck } from "react-icons/fi"
+
 // Import images
 import suv from "../../../public/suv.png"
 import hatch from "../../../public/hatch.png"
@@ -40,7 +42,7 @@ const carId = () => {
 
     )
   }
-  
+
 
   const carImages = [
     suv,
@@ -84,7 +86,7 @@ const carId = () => {
           }
         </Slider>
         <div className={`${styles.rightSide} flex column`}>
-          <Title medium={true}>Chevrolet Onix ASD Onix Supra</Title>
+          <h2 className={`${styles.carName}`}>Chevrolet Onix ASD Onix Supra</h2>
           <h2 className={`${styles.price}`}>R$42.400</h2>
           <Text>2014 | 67.542 km</Text>
           <div className={`${styles.actionButtonContainer} flex`}>
@@ -134,6 +136,16 @@ const carId = () => {
               <td>Flex</td>
             </tr>
           </table>
+        </div>
+
+        <div className={`${styles.additionals} flex column`}>
+          <Title small={true}>
+            Adicionais
+          </Title>
+          <div className={`flex`}>
+            <span className={`${styles.additionalItem} flex mainCenter crossCenter`}>Ar condicionado <FiCheck /></span>
+            <span className={`${styles.additionalItem} flex mainCenter crossCenter`}>Vidro elétrico <FiCheck /></span>
+          </div>
         </div>
       </div>
     </main>
