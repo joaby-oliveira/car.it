@@ -1,5 +1,18 @@
 @import '../../../styles/config/variables';
 
+@media (max-width: $carUniqueBreakMedium) {
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    .carousel {
+      ul.dotsContainer{
+        margin-bottom: 4.375rem !important;
+      }
+    }
+  }
+}
+
+
 .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -13,11 +26,13 @@
   gap: 2.5rem;
   padding: 2.5rem;
   .carousel {
-    background: $color-primary-3;
     grid-area: slider;
     max-width: 31rem;
     position: relative;
     border-radius: 1.25rem;
+    img {
+      border-radius: 1.25rem;
+    }
     .dotsContainer {
       margin-bottom: 3.125rem !important;
       li {

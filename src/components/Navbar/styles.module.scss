@@ -1,5 +1,11 @@
 @import '../../../styles/config/variables';
 
+@media (max-width: 1200px) {
+  .navbar {
+    display: none !important;
+  }
+}
+
 .landingNavbar {
   padding: 2.5rem;
   max-width: 1200px;
