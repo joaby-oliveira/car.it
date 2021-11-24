@@ -1,8 +1,9 @@
 import styles from "./styles.module.scss"
 
-export const Input = ({ label, name, placeholder, value, onChange, onBlur, error, isPassword, isEmail, type }) => {
+export const Input = ({ label, name, placeholder, value, onChange, onBlur, error, isPassword, isEmail, isNumber, type }) => {
   if(isPassword) type = "password"
   if(isEmail) type = "email"
+  if(isNumber) type = "number"
   return (
     <>
       <div className={`${styles.inputBlock} flex column`}>
