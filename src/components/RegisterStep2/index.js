@@ -2,26 +2,26 @@
 import Link from 'next/link'
 
 // Import components
-import { Input } from '../../components/Input';
+import { Input } from '../../components/Input'
 
 // Import styles 
-import { useForm } from '../../Hooks/useForm';
-import { Button } from '../../components/Button';
-import { Text } from '../../components/Text';
+import { useForm } from '../../Hooks/useForm'
+import { Button } from '../../components/Button'
+import { Text } from '../../components/Text'
 import styles from "./styles.module.scss"
-import { useContext } from 'react';
-import { RegisterContext } from '../../pages/register/RegisterContext';
+import { useContext } from 'react'
+import { RegisterContext } from '../../pages/register/RegisterContext'
 
 
 export const RegisterStep2 = (props) => {
   const registerData = useContext(RegisterContext)
 
-  const cep = useForm('cep');
-  const state = useForm('state');
-  const city = useForm('city');
-  const district = useForm('district');
-  const street = useForm('street');
-  const complement = useForm('complement');
+  const cep = useForm('cep')
+  const state = useForm('state')
+  const city = useForm('city')
+  const district = useForm('district')
+  const street = useForm('street')
+  const complement = useForm('complement')
 
   registerData.cep.setCep(cep.value)
   registerData.state.setState(state.value)
