@@ -5,9 +5,10 @@ import { Button } from '../../components/Button';
 // Import styles 
 import { useForm } from '../../Hooks/useForm';
 import { RegisterContext } from '../../pages/register/RegisterContext';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext } from 'react';
 
 export const RegisterStep1 = (props) => {
+
   const registerData = useContext(RegisterContext)
 
   const name = useForm('name');

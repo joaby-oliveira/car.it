@@ -16,8 +16,32 @@ import { useContext } from 'react';
 const Register = () => {
 
   const registerData = useContext(RegisterContext)
-  console.log(registerData.cpfCnpj.value)
-  
+
+  async function registerUser(e) {
+    e.preventDefault()
+    const userData = {
+      name: `${registerData.name.value} ${registerData.lastname.value}`,
+      phone: registerData.phone.value,
+      password: registerData.password.value,
+      email: registerData.email.value,
+      cpfCnpj: registerData.cpfCnpj.value
+    }
+    console.log(userData)
+    try {
+      const result = await fetch('http://localhost:8080/user', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+      })
+      console.log(result)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   return (
     <div className={`${styles.registerContainer} flex crossCenter mainCenter fullHeight`}>
       <Head>
@@ -32,7 +56,7 @@ const Register = () => {
         <ArrowBox href="/" />
 
         <Box padding="big">
-          <form className={`forms`}>
+          <form className={`forms`} onSubmit={registerUser}>
             <Steps>
               <Step component={RegisterStep1} />
               {/* <Step component={RegisterStep2} /> */}

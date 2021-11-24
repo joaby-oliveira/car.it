@@ -23,7 +23,6 @@ export const useForm = (type) => {
       return true
     }
   }
-
   function onChange({ target }) {
     let targetValue = target.value
     if(type === 'password' || type === 'username' || type === 'email') {
