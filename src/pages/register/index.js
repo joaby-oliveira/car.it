@@ -7,26 +7,29 @@ import { RegisterStep1 } from '../../components/RegisterStep1';
 import { RegisterStep2 } from '../../components/RegisterStep2';
 import { RegisterStep3 } from '../../components/RegisterStep3';
 import { Steps, Step } from "react-step-builder";
+import router from 'next/router'
+import { Text } from '../../components/Text'
 
 // Import styles 
+import { useContext, useState } from 'react';
 import styles from './styles.module.scss';
-import { RegisterContext } from './RegisterContext';
-import { useContext } from 'react';
+import { GlobalContext } from '../../Context/GlobalContext';
 
 const Register = () => {
 
-  const registerData = useContext(RegisterContext)
+  const { registerUserStep } = useContext(GlobalContext)
+  const [registerStatus, setRegisterStatus] = useState('')
 
   async function registerUser(e) {
     e.preventDefault()
     const userData = {
-      name: `${registerData.name.value} ${registerData.lastname.value}`,
-      phone: registerData.phone.value,
-      password: registerData.password.value,
-      email: registerData.email.value,
-      cpfCnpj: registerData.cpfCnpj.value
+      name: `${registerUserStep.name.value} ${registerUserStep.lastname.value}`,
+      phone: registerUserStep.phone.value,
+      password: registerUserStep.password.value,
+      email: registerUserStep.email.value,
+      cpfCnpj: registerUserStep.cpfCnpj.value
     }
-    console.log(userData)
+
     try {
       const result = await fetch('http://localhost:8080/user', {
         method: 'POST',
@@ -36,7 +39,14 @@ const Register = () => {
         },
         body: JSON.stringify(userData)
       })
-      console.log(result)
+      const data = await result.json()
+      !data.status ? setRegisterStatus({ msg: data.msg, status: false }) : setRegisterStatus({ msg: data.msg, status: 'Conta criada com sucesso!' })
+      if (data.status) {
+        setTimeout(() => {
+          router.push('/login')
+        }, 1000);
+      }
+      console.log(registerStatus)
     } catch (e) {
       console.log(e)
     }
@@ -60,11 +70,19 @@ const Register = () => {
             <Steps>
               <Step component={RegisterStep1} />
               {/* <Step component={RegisterStep2} /> */}
-              <Step component={RegisterStep3} />
+              <Step component={RegisterStep3} registerStatus={registerStatus} />
             </Steps>
           </form>
         </Box>
       </div>
+      {registerStatus.status && (
+        <div className={`successRegisterModal flex mainCenter crossCenter`}>
+          <Box small={true}>
+            <h2>Conta criada com sucesso!</h2>
+            <Text center={true}>Indo para a tela de login ;)</Text>
+          </Box>
+        </div>
+      )}
     </div>
   )
 }

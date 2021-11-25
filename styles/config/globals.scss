@@ -83,7 +83,33 @@ body {
 .error {
   font: $font-text;
   color: $color-error;
+  text-align: center;
   margin-top: .625rem;
+}
+
+.successRegisterModal {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.459);
+  transition: 0.2s;
+  div {
+    width: 25rem;
+    height: 12.5rem;
+    background: $color-secondary-3;
+    border-radius: 1.25rem;
+    h2 {
+      font: 700 1.5rem Poppins, sans-serif;
+      color: $color-primary-1;
+      text-align: center;
+    }
+    p {
+      margin-top: .625rem;
+    }
+  }
 }
 
 .formsRS {
