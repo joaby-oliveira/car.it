@@ -4,15 +4,15 @@ import { Box } from '../../components/Box';
 import { FormsLS } from "../../components/FormsLS";
 import { ArrowBox } from "../../components/ArrowBox";
 import { RegisterCarStep1 } from '../../components/RegisterCarStep1';
-import { RegisterCarStep2 } from './../../components/RegisterCarStep2';
-import { RegisterCarStep3 } from './../../components/RegisterCarStep3';
+import { RegisterCarStep2 } from '../../components/RegisterCarStep2';
+import { RegisterCarStep3 } from '../../components/RegisterCarStep3';
 
 import { Steps, Step } from "react-step-builder";
 
 // Import styles 
 import styles from './styles.module.scss';
 
-const RegisterCar = () => {
+const sell = () => {
   return (
     <div className={`${styles.registerContainer} flex crossCenter mainCenter fullHeight`}>
       <Head>
@@ -41,4 +41,4 @@ const RegisterCar = () => {
   )
 }
 
-export default RegisterCar
+export default sell
