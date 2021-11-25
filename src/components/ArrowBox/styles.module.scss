@@ -16,6 +16,6 @@
 
 @media (max-width: $formsBreakSmall) {
   .arrowBox {
-    display: none;
+    display: none !important;
   }
 }
