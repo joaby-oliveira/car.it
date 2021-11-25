@@ -1,8 +1,8 @@
-import { createContext, useState } from 'react'
+import { createContext, useState } from "react";
 
-export const RegisterContext = createContext()
+export const GlobalContext = createContext()
 
-export const RegisterStorage = ({ children }) => {
+export const GlobalStorage = ({ children }) => {
 
   const [name, setName] = useState('')
   const [lastname, setLastname] = useState('')
@@ -10,6 +10,7 @@ export const RegisterStorage = ({ children }) => {
   const [cpfCnpj, setCpfCnpj] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
   // const [cep, setCep] = useState('')
   // const [state, setState] = useState('')
   // const [city, setCity] = useState('')
@@ -18,13 +19,15 @@ export const RegisterStorage = ({ children }) => {
   // const [complement, setComplement] = useState('')
 
   return (
-    <RegisterContext.Provider value={{
-      name: { value: name, setName },
-      lastname: { value: lastname, setLastname },
-      phone: { value: phone, setPhone },
-      cpfCnpj: { value: cpfCnpj, setCpfCnpj },
-      email: { value: email, setEmail },
-      password: { value: password, setPassword },
+    <GlobalContext.Provider value={{
+      registerUserStep: {
+        name: { value: name, setName },
+        lastname: { value: lastname, setLastname },
+        phone: { value: phone, setPhone },
+        cpfCnpj: { value: cpfCnpj, setCpfCnpj },
+        email: { value: email, setEmail },
+        password: { value: password, setPassword },
+      }
       // cep: { value: cep, setCep },
       // state: { value: state, setState },
       // city: { value: city, setCity },
@@ -33,6 +36,7 @@ export const RegisterStorage = ({ children }) => {
       // complement: { value: complement, setComplement }
     }}>
       {children}
-    </RegisterContext.Provider>
+    </GlobalContext.Provider>
   )
+
 }

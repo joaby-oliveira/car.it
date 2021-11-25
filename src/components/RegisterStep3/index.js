@@ -10,18 +10,20 @@ import { Button } from '../../components/Button';
 import { Text } from '../../components/Text';
 import styles from "./styles.module.scss"
 import { useContext } from 'react';
-import { RegisterContext } from '../../pages/register/RegisterContext';
+import { GlobalContext } from '../../Context/GlobalContext';
 
 
 export const RegisterStep3 = (props) => {
-  const registerData = useContext(RegisterContext)
+  const { registerUserStep } = useContext(GlobalContext)
 
   const email = useForm('email');
   const password = useForm('password');
   // const confirmPassword = useForm('confirmPassword');
 
-  registerData.email.setEmail(email.value)
-  registerData.password.setPassword(password.value)
+  registerUserStep.email.setEmail(email.value)
+  registerUserStep.password.setPassword(password.value)
+
+  console.log(registerUserStep)
 
   return (
     <div className={`${styles.container}`} animationType="rightToLeft">
@@ -34,6 +36,7 @@ export const RegisterStep3 = (props) => {
         <Button form={true} >Finalizar</Button>
       </div>
 
+      <p className={`error`}>{!props.registerStatus.status ? props.registerStatus.msg : ''}</p>
       <Text center={true}>Ao criar uma conta, estará concordando com nossos <Link href="/"><a className={`${styles.termsAndConditions}`}>termos e condições.</a></Link></Text>
     </div>
   )
