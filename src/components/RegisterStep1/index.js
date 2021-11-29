@@ -4,22 +4,24 @@ import { Button } from '../../components/Button';
 
 // Import styles 
 import { useForm } from '../../Hooks/useForm';
-import { RegisterContext } from '../../pages/register/RegisterContext';
+import { GlobalContext } from '../../Context/GlobalContext';
 import { useContext } from 'react';
 
 export const RegisterStep1 = (props) => {
 
-  const registerData = useContext(RegisterContext)
+  const { registerUserStep } = useContext(GlobalContext)
 
   const name = useForm('name');
   const lastname = useForm('lastname');
   const phone = useForm('phone');
   const cpfCnpj = useForm('cpfCnpj');
 
-  registerData.name.setName(name.value)
-  registerData.lastname.setLastname(lastname.value)
-  registerData.phone.setPhone(phone.value)
-  registerData.cpfCnpj.setCpfCnpj(cpfCnpj.value)
+  registerUserStep.name.setName(name.value)
+  registerUserStep.lastname.setLastname(lastname.value)
+  registerUserStep.phone.setPhone(phone.value)
+  registerUserStep.cpfCnpj.setCpfCnpj(cpfCnpj.value)
+
+  console.log(registerUserStep)
 
   return (
     <div animationType="rightToLeft">

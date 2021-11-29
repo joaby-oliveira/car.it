@@ -38,7 +38,7 @@ const Login = () => {
       })
     })
     const data = await result.json()
-    if (data.token) {
+    if (data.status) {
       localStorage.setItem('loginToken', data.token)
       router.push('/home')
     } else {

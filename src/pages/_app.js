@@ -1,7 +1,7 @@
 import "../../styles/config/globals.scss"
-import { RegisterStorage } from "./register/RegisterContext"
+import { GlobalStorage } from "../Context/GlobalContext"
 function MyApp({ Component, pageProps }) {
-  return <RegisterStorage><Component {...pageProps} /></RegisterStorage>
+  return <GlobalStorage><Component {...pageProps} /></GlobalStorage>
 }
 
 export default MyApp

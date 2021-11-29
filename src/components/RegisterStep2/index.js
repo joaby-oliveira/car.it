@@ -10,11 +10,11 @@ import { Button } from '../../components/Button'
 import { Text } from '../../components/Text'
 import styles from "./styles.module.scss"
 import { useContext } from 'react'
-import { RegisterContext } from '../../pages/register/RegisterContext'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 
 export const RegisterStep2 = (props) => {
-  const registerData = useContext(RegisterContext)
+  // const {registerUserStep} = useContext(GlobalContext)
 
   const cep = useForm('cep')
   const state = useForm('state')
@@ -23,12 +23,12 @@ export const RegisterStep2 = (props) => {
   const street = useForm('street')
   const complement = useForm('complement')
 
-  registerData.cep.setCep(cep.value)
-  registerData.state.setState(state.value)
-  registerData.city.setCity(city.value)
-  registerData.district.setDistrict(district.value)
-  registerData.street.setStreet(street.value)
-  registerData.complement.setComplement(complement.value)
+//   registerUserStep.cep.setCep(cep.value)
+// registerUserStep.state.setState(state.value)
+//   registerUserStep.city.setCity(city.value)
+//   registerUserStep.district.setDistrict(district.value)
+//   registerUserStep.street.setStreet(street.value)
+//   registerUserStep.complement.setComplement(complement.value)
 
   return (
     <div className={`${styles.container}`} animationType="rightToLeft">
