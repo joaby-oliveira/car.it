@@ -10,7 +10,8 @@ import { Title } from '../Title'
 
 import styles from './styles.module.scss'
 
-export const CarPreview = () => {
+export const CarPreview = (props) => {
+  console.log(props)
   return (
     <div className={`${styles.carPreview} flex column crossCenter`}>
       <div className={`${styles.carImageContainer}`}>
