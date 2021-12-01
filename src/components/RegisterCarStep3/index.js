@@ -12,7 +12,7 @@ export const RegisterCarStep3 = (props) => {
             <SelectFuel />
 
             <Button secondary={true} stepButton={true} onClick={props.prev}>Voltar etapa</Button>
-            <Button stepButton={true} onClick={props.next}>Finalizar</Button>
+            <Button stepButton={true} onClick={props.next}>Anunciar carro à venda</Button>
         </>
     )
 }
