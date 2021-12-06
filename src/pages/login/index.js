@@ -5,7 +5,7 @@ import Link from 'next/link'
 import router from 'next/router'
 
 // Import React hooks
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 
 // Import components
 import Head from 'next/head'
@@ -19,10 +19,13 @@ import { ArrowBox } from "../../components/ArrowBox";
 // Import styles 
 import styles from './styles.module.scss';
 import { useForm } from '../../Hooks/useForm';
+import { GlobalContext } from '../../Context/GlobalContext';
 
 const Login = () => {
   const email = useForm('email')
   const password = useForm('password')
+
+  const { userData } = useContext(GlobalContext)
 
   const [loginErrorMessage, setLoginErrorMessage] = useState('')
 
@@ -38,8 +41,14 @@ const Login = () => {
       })
     })
     const data = await result.json()
+    const userId = data.data.id
     if (data.status) {
-      localStorage.setItem('loginToken', data.token)
+      const result = await fetch(`http://localhost:8080/user/${userId}`)
+      const user = await result.json()
+      
+      localStorage.setItem('loginToken', data.data.token)
+      localStorage.setItem('userId', user.data[0].id)
+      
       router.push('/home')
     } else {
       setLoginErrorMessage('Email ou senha inválidos')

@@ -3,8 +3,8 @@ import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
 // Import styles 
-import { useForm } from '../../Hooks/useForm';
 import { GlobalContext } from '../../Context/GlobalContext';
+import { useForm } from '../../Hooks/useForm';
 import { useContext } from 'react';
 
 export const RegisterStep1 = (props) => {

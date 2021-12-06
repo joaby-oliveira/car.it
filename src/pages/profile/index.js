@@ -6,6 +6,7 @@ import { ProfilDetailItem } from '../../components/ProfileDetailItem'
 
 
 const Profile = () => {
+
   return (
     <main className={`${styles.container} page flex crossStart`}>
       <Navbar />

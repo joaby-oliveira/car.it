@@ -11,6 +11,24 @@ export const GlobalStorage = ({ children }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  const [model, setModel] = useState('')
+  const [direction, setDirection] = useState('')
+  const [year, setYear] = useState('')
+  const [status, setStatus] = useState('')
+  const [price, setPrice] = useState('')
+  const [additions, setAdditions] = useState({})
+  const [transmission, setTransmission] = useState('')
+  const [mileage, setMileage] = useState('')
+  const [doors, setDoors] = useState('')
+  const [fuel, setFuel] = useState('')
+  const [brand, setBrand] = useState('')
+
+  const [userName, setUserName] = useState('')
+  const [userPhone, setUserPhone] = useState('')
+  const [userEmail, setUserEmail] = useState('')
+  const [userCpf, setUserCpf] = useState('')
+  const [userCnpj, setUserCnpj] = useState('')
+
   // const [cep, setCep] = useState('')
   // const [state, setState] = useState('')
   // const [city, setCity] = useState('')
@@ -27,6 +45,27 @@ export const GlobalStorage = ({ children }) => {
         cpfCnpj: { value: cpfCnpj, setCpfCnpj },
         email: { value: email, setEmail },
         password: { value: password, setPassword },
+      },
+      registerCarStep: {
+        model: { value: model, setModel },
+        year: { value: year, setYear },
+        status: { value: status, setStatus },
+        price: { value: price, setPrice },
+        direction: { value: direction, setDirection },
+        additions: { value: additions, setAdditions },
+        transmission: { value: transmission, setTransmission },
+        mileage: { value: mileage, setMileage },
+        doors: { value: doors, setDoors },
+        fuel: { value: fuel, setFuel },
+        direction: { value: direction, setDirection },
+        brand: {value: brand, setBrand}
+      },
+      userData: {
+        userName: { value: userName, setValue: setUserName },
+        userPhone: { value: userPhone, setValue: setUserPhone },
+        userEmail: { value: userEmail, setValue: setUserEmail },
+        userCpf: { value: userCpf, setValue: setUserCpf },
+        userCnpj: { value: userCnpj, setValue: setUserCnpj },
       }
       // cep: { value: cep, setCep },
       // state: { value: state, setState },
