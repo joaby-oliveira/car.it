@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { FiHeart } from 'react-icons/fi'
 
@@ -26,7 +25,7 @@ export const CarPreview = () => {
         </div>
         <h2 className={`${styles.price}`}>R$ 35.500</h2>
         <div className={styles.more}>
-          <Button href="/car" fillParent={true}>Ver carro</Button>
+          <Button href="/car/1" fillParent={true}>Ver carro</Button>
         </div>
       </div>
     </div>

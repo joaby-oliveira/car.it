@@ -13,7 +13,7 @@ export const ActionButton = ({ fipe, garage }) => {
         <div className={`${styles.imageContainer} flex crossCenter`}>
           <Image src={fipe ? fipeIlustration : '' || garage ? garageIlustration : ''} />
         </div>
-        <Link href={`${fipe ? 'fipe' : '' || garage ? 'garage' : ''}`}>
+        <Link href={`${fipe ? '#' : '' || garage ? 'garage' : ''}`}>
           <a className={`${styles.cta} flex mainCenter crossCenter`}>
             {fipe && (
               <>

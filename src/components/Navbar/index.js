@@ -48,7 +48,7 @@ export const Navbar = ({ landing }) => {
         </li>
 
         <li className={`${styles.navItem}`}>
-          <Link href="/chat">
+          <Link href="#">
             <a className={`flex crossCenter`}>
               <FiMessageSquare className={`${styles.icons}`} />
               <Text white={true}>Mensagens</Text>
