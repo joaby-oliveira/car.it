@@ -8,7 +8,9 @@ import { ProfilDetailItem } from '../../components/ProfileDetailItem'
 const Profile = () => {
 
   return (
+    
     <main className={`${styles.container} page flex crossStart`}>
+      <title>Car.it | Perfil</title>
       <Navbar />
       <div className={`${styles.boxContainer} flex`}>
         <Box>
