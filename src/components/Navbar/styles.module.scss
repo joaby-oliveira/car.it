@@ -1,7 +1,44 @@
-@import '../../../styles/config/variables';
+@import "../../../styles/config/variables";
 
 @media (max-width: 1200px) {
-  .navbar {
+  .navbar:first-child {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    top: unset;
+    z-index: 10;
+    position: fixed;
+    .navItem {
+      & + .navItem {
+        margin-top: 0;
+        font-size: 1rem;
+      }
+      p {
+        margin-top: .5rem;
+        font-size: 0.875rem;
+        margin-left: 0
+      }
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .navbar > ul {
+    flex-direction: row;
+  }
+
+  .navbar > svg {
+    display: none;
+  }
+
+  .navItem > a {
+    flex-direction: column;
+  }
+
+  .navbar > button {
     display: none !important;
   }
 }
@@ -19,7 +56,7 @@
 
 .navbar {
   background: linear-gradient(176.65deg, #090a11 0%, #393d60 100%);
-  padding: .625rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   height: 100vh;
   min-width: 16.75rem;
   position: sticky;
@@ -41,14 +78,14 @@
       border-radius: 1.25rem;
       transition: 0.2s;
       a {
-        padding: .625rem;
+        padding: 0.625rem;
       }
       & + .navItem {
-        margin-top: .625rem;
+        margin-top: 0.625rem;
       }
       p {
         color: #e6e7f4;
-        margin-left: .3125rem;
+        margin-left: 0.3125rem;
       }
       &:hover {
         width: 100%;
