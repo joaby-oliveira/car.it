@@ -52,7 +52,7 @@ const Account = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/account">
+                <Link href="#">
                   <a className={`flex crossCenter`}>
                     <FiSettings size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -73,7 +73,7 @@ const Account = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/account">
+                <Link href="#">
                   <a className={`flex crossCenter`}>
                     <FiBell size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>
@@ -83,7 +83,7 @@ const Account = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/account">
+                <Link href="#">
                   <a className={`flex crossCenter`}>
                     <FiLogOut size={24} />
                     <div className={`${styles.textContainer} mainStart crossStart flex column`}>

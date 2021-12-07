@@ -68,8 +68,8 @@ const Login = () => {
 
           <p className={`error`}>{loginErrorMessage}</p>
           <div className={`${styles.btnContainer} flex`}>
-            <Button fillParent={true} google={true} href="/"> <FaGoogle /> </Button>
-            <Button fillParent={true} facebook={true} href="/"> <FaFacebookF /> </Button>
+            <Button fillParent={true} google={true} href="#"> <FaGoogle /> </Button>
+            <Button fillParent={true} facebook={true} href="#"> <FaFacebookF /> </Button>
           </div>
           <h3 className={`${styles.loginText}`}>Não é cadastrado?<a href="/register"> Registre-se</a></h3>
         </Box>

@@ -24,11 +24,11 @@ export const Footer = () => {
       <div className={`${styles.bottom} flex spaceBetween`}>
         <p>Copyright © 2021 Car.it - Todos direitos reservados</p>
         <div className={`flex crossCenter`}>
-          <Link href="/termos-e-condicoes">
+          <Link href="#">
             <a>Termos e Condições</a>
           </Link>
           <span className={styles.spacer} />
-          <Link href="/politica-de-privacidade">
+          <Link href="#">
             <a className={`flex crossCenter`}>Política de Privacidade</a>
           </Link>
         </div>

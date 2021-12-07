@@ -11,7 +11,9 @@ const Profile = () => {
   const { userData } = useContext(GlobalContext)
   console.log(userData.name)
   return (
+    
     <main className={`${styles.container} page flex crossStart`}>
+      <title>Car.it | Perfil</title>
       <Navbar />
       <div className={`${styles.boxContainer} flex`}>
         <Box>

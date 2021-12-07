@@ -16,7 +16,7 @@ export const Hero = () => {
       <Tag>Novidade</Tag>
       <Title>Tenha acesso aos <span>melhores carros</span> semi-novos da sua região!</Title>
       <Text>Car.it é um novo jeito de obter um veículo próprio com o melhor custo e conforto, sempre se adequando com o seu gosto.</Text>
-      <Button href="/app">
+      <Button href="/home">
         Encontre o seu veículo agora!
         <ArrowRight className={styles.arrowIcon} strokeWidth={3} />
       </Button>
