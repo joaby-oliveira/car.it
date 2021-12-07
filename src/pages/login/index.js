@@ -25,34 +25,22 @@ const Login = () => {
   const email = useForm('email')
   const password = useForm('password')
 
-  const { userData } = useContext(GlobalContext)
+  const { user, userLogin, login } = useContext(GlobalContext)
 
   const [loginErrorMessage, setLoginErrorMessage] = useState('')
 
   async function auth(e) {
     e.preventDefault()
-    const result = await fetch('http://localhost:8080/user/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credential: 'same-origin',
-      body: JSON.stringify({
-        email: email.value,
-        password: password.value
-      })
-    })
-    const data = await result.json()
-    const userId = data.data.id
-    if (data.status) {
-      const result = await fetch(`http://localhost:8080/user/${userId}`)
-      const user = await result.json()
-      
-      localStorage.setItem('loginToken', data.data.token)
-      localStorage.setItem('userId', user.data[0].id)
-      
+
+    await userLogin(email.value, password.value)
+    console.log(user && user)
+    
+    if (login && login) {
       router.push('/home')
     } else {
       setLoginErrorMessage('Email ou senha inválidos')
     }
+    
   }
   return (
     <div className={`${styles.loginContainer} flex crossCenter mainCenter fullHeight`}>

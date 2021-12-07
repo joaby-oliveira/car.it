@@ -23,11 +23,40 @@ export const GlobalStorage = ({ children }) => {
   const [fuel, setFuel] = useState('')
   const [brand, setBrand] = useState('')
 
-  const [userName, setUserName] = useState('')
-  const [userPhone, setUserPhone] = useState('')
-  const [userEmail, setUserEmail] = useState('')
-  const [userCpf, setUserCpf] = useState('')
-  const [userCnpj, setUserCnpj] = useState('')
+  const [userData, setUserData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    cpf: '',
+    cnpj: '',
+  })
+
+  const [login, setLogin] = useState(null)
+
+  async function getUser(id) {
+    const response = await fetch(`http://localhost:8080/user/${id}`)
+    const json = await response.json()
+    setLogin(true)
+    setUserData({ ...json.data[0] })
+  }
+
+
+  async function userLogin(email, password) {
+    const result = await fetch('http://localhost:8080/user/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credential: 'same-origin',
+      body: JSON.stringify({
+        email,
+        password
+      })
+    })
+    const json = await result.json()
+    localStorage.setItem('token', json.data.token)
+
+    getUser(json.data.id)
+  }
+
 
   // const [cep, setCep] = useState('')
   // const [state, setState] = useState('')
@@ -58,15 +87,11 @@ export const GlobalStorage = ({ children }) => {
         doors: { value: doors, setDoors },
         fuel: { value: fuel, setFuel },
         direction: { value: direction, setDirection },
-        brand: {value: brand, setBrand}
+        brand: { value: brand, setBrand }
       },
-      userData: {
-        userName: { value: userName, setValue: setUserName },
-        userPhone: { value: userPhone, setValue: setUserPhone },
-        userEmail: { value: userEmail, setValue: setUserEmail },
-        userCpf: { value: userCpf, setValue: setUserCpf },
-        userCnpj: { value: userCnpj, setValue: setUserCnpj },
-      }
+      userData,
+      userLogin,
+      login
       // cep: { value: cep, setCep },
       // state: { value: state, setState },
       // city: { value: city, setCity },

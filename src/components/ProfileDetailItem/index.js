@@ -13,9 +13,7 @@ export const ProfilDetailItem = ({ dataName, className }) => {
           {dataName === 'password' && ('Senha')}
         </Title>
         <Text>
-          {dataName === 'name' && ('Renan Caetano Gomes')}
-          {dataName === 'cellphone' && ('(14) 90000-0000')}
-          {dataName === 'password' && ('********')}
+          {dataName}
         </Text>
       </div>
       <span className={`${styles.editButton} flex mainCenter crossCenter`}>

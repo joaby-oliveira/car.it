@@ -2,6 +2,9 @@ import { Navbar } from '../../components/Navbar'
 import { ProfilePreview } from '../../components/ProfilePreview'
 import Head from 'next/head'
 
+import { useContext } from 'react'
+import { GlobalContext } from '../../Context/GlobalContext'
+
 import Link from 'next/link'
 
 import { FiSettings, FiBell } from 'react-icons/fi'
@@ -21,6 +24,11 @@ import { ActionButton } from '../../components/ActionButton'
 import { CarCategory } from '../../components/CarCategory'
 
 const Home = () => {
+
+  const { userData } = useContext(GlobalContext)
+
+  console.log(userData && userData)
+
   const configs = {
     className: "slider variable-width",
     dots: false,
